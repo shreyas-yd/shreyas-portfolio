@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results & Portfolio — Shreyas Y D | What the Work Produced</title>
+  <meta name="description" content="Portfolio of outcomes by Shreyas Y D — 17K+ community from zero, 3× leads, 90% visitor growth, 60% LinkedIn growth. Every result is verifiable. The links are live.">
+  <link rel="canonical" href="https://ydshreyas.com/results.html">
+  <meta property="og:title" content="Results & Portfolio — Shreyas Y D">
+  <meta property="og:description" content="What the work produced. 17K+ community. 3× leads. 90% visitor growth. Every result is verifiable — the links are live.">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+
+    /* ══════════════════════════════════════
+       PAGE HEADER
+    ══════════════════════════════════════ */
+    .port-header {
+      background: var(--accent);
+      padding: 120px 48px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .port-header::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, transparent 70%);
+    }
+    .port-header::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: rgba(0,0,0,0.15);
+    }
+    .port-header__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .port-header__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .port-header__eyebrow::before {
+      content: ''; width: 28px; height: 1px;
+      background: rgba(255,255,255,0.7); flex-shrink: 0;
+    }
+    .port-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 8vw, 104px);
+      font-weight: 900;
+      line-height: 0.92;
+      letter-spacing: -3px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .port-header h1 em { font-style: italic; color: rgba(255,255,255,0.65); }
+    .port-header__sub {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .port-header__note {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: rgba(255,255,255,0.5);
+    }
+    .port-header__note a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      transition: all var(--transition);
+    }
+    .port-header__note a:hover { color: #fff; border-color: #fff; }
+
+    /* ══════════════════════════════════════
+       RESULTS NAV STRIP
+    ══════════════════════════════════════ */
+    .results-nav {
+      background: var(--ink);
+      padding: 0 48px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      position: sticky;
+      top: 64px;
+      z-index: 100;
+    }
+    .results-nav::-webkit-scrollbar { display: none; }
+    .results-nav__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: stretch;
+    }
+    .results-nav__item {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      text-decoration: none;
+      padding: 16px 20px;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .results-nav__item:hover,
+    .results-nav__item.active {
+      color: #fff;
+      border-bottom-color: var(--accent);
+    }
+    .results-nav__num {
+      font-size: 9px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ══════════════════════════════════════
+       OUTCOME BLOCK — shared structure
+    ══════════════════════════════════════ */
+    .outcome {
+      padding: 96px 48px;
+      scroll-margin-top: 112px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .outcome:last-child { border-bottom: none; }
+    .outcome--light { background: var(--white); }
+    .outcome--cream  { background: var(--cream); }
+    .outcome--dark   { background: var(--navy); }
+
+    .outcome__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    /* Top label row */
+    .outcome__label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .outcome--dark .outcome__label { color: rgba(255,255,255,0.3); }
+    .outcome__label::before {
+      content: attr(data-num);
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+
+    /* Hero number */
+    .outcome__hero {
+      font-family: var(--font-display);
+      font-size: clamp(80px, 14vw, 160px);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -4px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .outcome--dark .outcome__hero { color: var(--accent); }
+
+    .outcome__hero-context {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: var(--mid);
+      margin-bottom: 56px;
+      max-width: 640px;
+      line-height: 1.5;
+    }
+    .outcome--dark .outcome__hero-context { color: rgba(255,255,255,0.4); }
+
+    /* Two-column body */
+    .outcome__body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* Left: story */
+    .outcome__story {}
+
+    .outcome__story-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .outcome__story-label::before { content: '◆'; font-size: 7px; }
+
+    .outcome__before-after {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      background: var(--rule);
+      margin-bottom: 24px;
+    }
+    .ba-cell {
+      padding: 20px;
+    }
+    .outcome--light .ba-cell  { background: var(--paper); }
+    .outcome--cream .ba-cell  { background: var(--white); }
+    .outcome--dark  .ba-cell  { background: rgba(255,255,255,0.04); }
+    .ba-cell__label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .outcome--light .ba-cell__label { color: var(--faint); }
+    .outcome--cream .ba-cell__label { color: var(--faint); }
+    .outcome--dark  .ba-cell__label { color: rgba(255,255,255,0.3); }
+    .ba-cell--before .ba-cell__label { color: var(--faint); }
+    .ba-cell--after  .ba-cell__label { color: var(--teal); }
+    .outcome--dark .ba-cell--after .ba-cell__label { color: var(--teal); }
+    .ba-cell__text {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+    }
+    .outcome--light .ba-cell__text { color: var(--mid); }
+    .outcome--cream .ba-cell__text { color: var(--mid); }
+    .outcome--dark  .ba-cell__text { color: rgba(255,255,255,0.6); }
+
+    .outcome__story p {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.8;
+      margin-bottom: 14px;
+    }
+    .outcome--dark .outcome__story p { color: rgba(255,255,255,0.55); }
+    .outcome__story p strong { font-weight: 600; color: var(--ink); }
+    .outcome--dark .outcome__story p strong { color: #fff; }
+    .outcome__story p:last-child { margin-bottom: 0; }
+
+    /* Right: metrics + links */
+    .outcome__right {}
+
+    /* Supporting metrics */
+    .outcome__metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: var(--rule);
+      margin-bottom: 32px;
+    }
+    .metric-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 20px;
+    }
+    .outcome--light .metric-row { background: var(--paper); }
+    .outcome--cream .metric-row { background: var(--white); }
+    .outcome--dark  .metric-row { background: rgba(255,255,255,0.04); }
+    .metric-row__num {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.5vw, 32px);
+      font-weight: 900;
+      line-height: 1;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    .metric-row__label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-align: right;
+    }
+    .outcome--light .metric-row__label { color: var(--mid); }
+    .outcome--cream .metric-row__label { color: var(--mid); }
+    .outcome--dark  .metric-row__label { color: rgba(255,255,255,0.35); }
+
+    /* Links — PROMINENT */
+    .outcome__links-label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 12px;
+    }
+    .outcome--dark .outcome__links-label { color: rgba(255,255,255,0.3); }
+
+    .outcome__links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .outcome-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      text-decoration: none;
+      border: 1.5px solid var(--rule);
+      transition: all var(--transition);
+      gap: 16px;
+    }
+    .outcome--dark .outcome-link { border-color: rgba(255,255,255,0.12); }
+
+    .outcome-link:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .outcome--dark .outcome-link:hover { background: var(--accent); border-color: var(--accent); }
+
+    .outcome-link__label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink);
+      transition: color var(--transition);
+    }
+    .outcome--dark .outcome-link__label { color: rgba(255,255,255,0.75); }
+    .outcome-link:hover .outcome-link__label { color: #fff; }
+
+    .outcome-link__url {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      color: var(--faint);
+      transition: color var(--transition);
+      flex-shrink: 0;
+    }
+    .outcome--dark .outcome-link__url { color: rgba(255,255,255,0.25); }
+    .outcome-link:hover .outcome-link__url { color: rgba(255,255,255,0.8); }
+
+    .outcome-link__arrow {
+      font-size: 14px;
+      color: var(--teal);
+      flex-shrink: 0;
+      transition: color var(--transition), transform var(--transition);
+    }
+    .outcome-link:hover .outcome-link__arrow { color: #fff; transform: translateX(3px); }
+
+    /* Story-only link (no url) */
+    .outcome-link--story {
+      border-style: dashed;
+      border-color: var(--teal);
+    }
+    .outcome-link--story .outcome-link__label { color: var(--teal); }
+    .outcome-link--story:hover .outcome-link__label { color: #fff; }
+    .outcome--dark .outcome-link--story { border-color: var(--teal); }
+    .outcome--dark .outcome-link--story .outcome-link__label { color: var(--teal); }
+
+    /* ── SVG CHARTS ── */
+    .chart-wrap {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      padding: 24px;
+      margin-top: 32px;
+    }
+    .outcome--dark .chart-wrap {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(255,255,255,0.08);
+    }
+    .chart-title {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 16px;
+    }
+    .outcome--dark .chart-title { color: rgba(255,255,255,0.3); }
+    .c-svg  { width: 100%; overflow: visible; }
+    .c-axis { stroke: var(--rule); stroke-width: 1; }
+    .c-grid { stroke: #ede8df; stroke-width: 1; stroke-dasharray: 4 4; }
+    .c-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .c-area { opacity: 0.12; }
+    .c-lbl  { font-family: 'DM Mono', monospace; font-size: 9px; fill: #9896a4; }
+
+    /* AI donut */
+    .ai-panel {
+      padding: 32px;
+      margin-top: 32px;
+      background: var(--navy);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .ai-donut { position: relative; width: 140px; height: 140px; flex-shrink: 0; }
+    .ai-donut svg { width: 100%; height: 100%; }
+    .ai-donut__label {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+    }
+    .ai-donut__num {
+      font-family: var(--font-display);
+      font-size: 30px; font-weight: 900; color: var(--accent); line-height: 1;
+    }
+    .ai-donut__text {
+      font-family: var(--font-mono);
+      font-size: 8px; letter-spacing: 1px; text-transform: uppercase;
+      color: rgba(255,255,255,0.35); line-height: 1.3; margin-top: 4px;
+    }
+    .ai-bars { display: flex; flex-direction: column; gap: 16px; }
+    .ai-bar-item {}
+    .ai-bar-label {
+      font-family: var(--font-mono);
+      font-size: 9px; letter-spacing: 1px; text-transform: uppercase;
+      color: rgba(255,255,255,0.3); margin-bottom: 6px;
+    }
+    .ai-bar-track {
+      background: rgba(255,255,255,0.07); height: 20px; position: relative;
+    }
+    .ai-bar-fill {
+      height: 100%; width: 0;
+      display: flex; align-items: center; justify-content: flex-end;
+      padding-right: 8px;
+      transition: width 1.4s cubic-bezier(0.16,1,0.3,1);
+    }
+    .ai-bar-val {
+      font-family: var(--font-mono);
+      font-size: 10px; font-weight: 500; color: #fff;
+    }
+
+    /* Chaitanya story excerpt */
+    .story-excerpt {
+      border-left: 3px solid var(--teal);
+      padding: 20px 24px;
+      margin-top: 24px;
+    }
+    .outcome--light .story-excerpt { background: var(--paper); }
+    .outcome--cream .story-excerpt { background: var(--white); }
+    .story-excerpt__text {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .story-excerpt__attr {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    /* ══════════════════════════════════════
+       BOTTOM CTA
+    ══════════════════════════════════════ */
+    .port-footer-cta {
+      background: var(--ink);
+      padding: 56px 48px;
+      text-align: center;
+    }
+    .port-footer-cta p {
+      font-size: 16px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 12px;
+    }
+    .port-footer-cta a {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+      transition: all var(--transition);
+    }
+    .port-footer-cta a:hover { color: #fff; border-color: #fff; }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .port-header { padding: 100px 24px 56px; }
+      .results-nav { padding: 0 16px; }
+      .outcome { padding: 72px 24px; }
+      .outcome__body { grid-template-columns: 1fr; gap: 40px; }
+      .outcome__before-after { grid-template-columns: 1fr; }
+      .ai-panel { grid-template-columns: 1fr; }
+      .ai-donut { width: 120px; height: 120px; }
+      .port-footer-cta { padding: 44px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="site-nav" id="sitenav">
+  <a class="nav-logo" href="index.html">Shreyas <span>Y D</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="results.html" class="active">Results</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="contact.html">Get in Touch →</a>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ PAGE HEADER ══ -->
+<header class="port-header">
+  <div class="port-header__inner">
+    <div class="port-header__eyebrow">Portfolio of Outcomes · Verified Results</div>
+    <h1>What the work <em>produced.</em></h1>
+    <p class="port-header__sub">Every result on this page is verifiable. The links are live. The numbers are real.</p>
+    <p class="port-header__note">For the complete work history and responsibilities behind these results — <a href="work.html">see the Work page →</a></p>
+  </div>
+</header>
+
+<!-- ══ RESULTS NAV ══ -->
+<nav class="results-nav" aria-label="Jump to result">
+  <div class="results-nav__inner">
+    <a class="results-nav__item" href="#recruitzo"><span class="results-nav__num">01</span> Jones RecruitZo</a>
+    <a class="results-nav__item" href="#jam"><span class="results-nav__num">02</span> Jones Asset Management</a>
+    <a class="results-nav__item" href="#jel"><span class="results-nav__num">03</span> Jones Elite Logistics</a>
+    <a class="results-nav__item" href="#karle"><span class="results-nav__num">04</span> Karle Infra</a>
+    <a class="results-nav__item" href="#chaitanya"><span class="results-nav__num">05</span> Chaitanya India</a>
+    <a class="results-nav__item" href="#crunchbase"><span class="results-nav__num">06</span> Trupp / Crunchbase</a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════
+     01 · JONES RECRUITZO — 17K+
+══════════════════════════════════════════════ -->
+<section class="outcome outcome--light" id="recruitzo" aria-label="Jones RecruitZo result">
+  <div class="outcome__inner">
+    <div class="outcome__label" data-num="01">Jones RecruitZo · LinkedIn Brand Build</div>
+    <div class="outcome__hero animate-fadeup">17K+</div>
+    <p class="outcome__hero-context animate-fadeup delay-1">Organic LinkedIn followers — built from a blank page in under one year, with zero paid advertising spend.</p>
+
+    <div class="outcome__body">
+      <div class="outcome__story animate-fadeup delay-1">
+        <div class="outcome__story-label">Before &amp; After</div>
+        <div class="outcome__before-after">
+          <div class="ba-cell ba-cell--before">
+            <div class="ba-cell__label">Before</div>
+            <p class="ba-cell__text">The LinkedIn page didn't exist. Zero followers. Zero content. Zero brand presence. A complete blank page.</p>
+          </div>
+          <div class="ba-cell ba-cell--after">
+            <div class="ba-cell__label">After</div>
+            <p class="ba-cell__text">17,000+ organic followers. Full brand identity, content flywheel, video strategy, and community model — all built from scratch, all organic.</p>
+          </div>
+        </div>
+        <p>The Jones RecruitZo LinkedIn presence was built entirely from zero — no inherited audience, no paid amplification, no legacy brand equity to lean on. Every follower was earned through content that was specifically designed for the platform's audience and algorithm.</p>
+        <p>What made this work wasn't a single campaign. It was the infrastructure built underneath it: a <strong>brand identity that felt distinct from the Jones Group parent</strong>, a content flywheel that maintained consistent output without creative burnout, a video strategy that performed at the format level LinkedIn rewards, and a community engagement model that turned followers into active participants.</p>
+        <p>From launch to 17,000+ followers in under one year. Making it <strong>one of the Jones Group's most visible and engaged brand properties</strong> — in a fraction of the time any of its other brands took to reach comparable scale.</p>
+      </div>
+
+      <div class="outcome__right animate-fadeup delay-2">
+        <div class="outcome__metrics">
+          <div class="metric-row">
+            <div class="metric-row__num">17K+</div>
+            <div class="metric-row__label">Organic LinkedIn Followers</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">&lt;1yr</div>
+            <div class="metric-row__label">Time from Zero to Scale</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">0₹</div>
+            <div class="metric-row__label">Paid Advertising Spend</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">Full</div>
+            <div class="metric-row__label">Brand Built from Scratch</div>
+          </div>
+        </div>
+
+        <div class="outcome__links-label">Verify the work</div>
+        <div class="outcome__links">
+          <a class="outcome-link" href="https://in.linkedin.com/company/jones-recruitzo" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Jones RecruitZo LinkedIn</span>
+            <span class="outcome-link__url">in.linkedin.com/company/jones-recruitzo</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+          <a class="outcome-link" href="https://www.jonesrecruitzo.com" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Jones RecruitZo Website</span>
+            <span class="outcome-link__url">jonesrecruitzo.com</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     02 · JONES ASSET MANAGEMENT — 3×
+══════════════════════════════════════════════ -->
+<section class="outcome outcome--cream" id="jam" aria-label="Jones Asset Management result">
+  <div class="outcome__inner">
+    <div class="outcome__label" data-num="02">Jones Asset Management · Organic Lead Growth + AI Pipeline</div>
+    <div class="outcome__hero animate-fadeup">3×</div>
+    <p class="outcome__hero-context animate-fadeup delay-1">New daily leads — tripled through purely organic content strategy, with zero paid advertising spend. AI pipelines built simultaneously reduced creative turnaround by 60%.</p>
+
+    <div class="outcome__body">
+      <div class="outcome__story animate-fadeup delay-1">
+        <div class="outcome__story-label">Before &amp; After</div>
+        <div class="outcome__before-after">
+          <div class="ba-cell ba-cell--before">
+            <div class="ba-cell__label">Before</div>
+            <p class="ba-cell__text">Organic growth was minimal. Content production was slow and heavily team-dependent. No AI workflows. High turnaround times.</p>
+          </div>
+          <div class="ba-cell ba-cell--after">
+            <div class="ba-cell__label">After</div>
+            <p class="ba-cell__text">3× new daily leads. 300% organic growth. AI pipelines cut creative TAT by 60% and boosted SEO team productivity by 50%.</p>
+          </div>
+        </div>
+        <p>The lead growth at Jones Asset Management was achieved through a single-minded focus on the right message reaching the right audience — <strong>no paid amplification, no retargeting, no ad budget</strong>. Just sharp brand positioning, the right content formats for the platform, and a publishing rhythm that built compounding authority over time.</p>
+        <p>Running simultaneously, AI content generation pipelines were introduced into the creative process — not to replace judgment, but to <strong>multiply the team's output without multiplying headcount</strong>. The result was a 60% reduction in social media content turnaround and a 50% increase in SEO team productivity.</p>
+
+        <!-- AI efficiency panel -->
+        <div class="ai-panel animate-fadeup" id="aiBarChart">
+          <div class="ai-donut">
+            <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="70" cy="70" r="52" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="16"/>
+              <circle cx="70" cy="70" r="52" fill="none" stroke="#c0432a" stroke-width="16"
+                stroke-dasharray="196 130" stroke-dashoffset="82" stroke-linecap="round"/>
+            </svg>
+            <div class="ai-donut__label">
+              <div class="ai-donut__num">60%</div>
+              <div class="ai-donut__text">TAT<br>Reduction</div>
+            </div>
+          </div>
+          <div class="ai-bars">
+            <div class="ai-bar-item">
+              <div class="ai-bar-label">Creative Content TAT Reduction</div>
+              <div class="ai-bar-track"><div class="ai-bar-fill" data-width="60" style="background:linear-gradient(90deg,var(--accent),#e07060);"><span class="ai-bar-val">−60%</span></div></div>
+            </div>
+            <div class="ai-bar-item">
+              <div class="ai-bar-label">SEO Team Productivity Gain</div>
+              <div class="ai-bar-track"><div class="ai-bar-fill" data-width="50" style="background:linear-gradient(90deg,var(--teal),#2a9b8a);"><span class="ai-bar-val">+50%</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome__right animate-fadeup delay-2">
+        <div class="outcome__metrics">
+          <div class="metric-row">
+            <div class="metric-row__num">3×</div>
+            <div class="metric-row__label">New Daily Leads</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">300%</div>
+            <div class="metric-row__label">Organic Lead Growth</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">60%↓</div>
+            <div class="metric-row__label">Creative TAT via AI</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">50%↑</div>
+            <div class="metric-row__label">SEO Team Productivity</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">0₹</div>
+            <div class="metric-row__label">Paid Advertising Spend</div>
+          </div>
+        </div>
+
+        <div class="outcome__links-label">Verify the work</div>
+        <div class="outcome__links">
+          <a class="outcome-link" href="https://jonesasset.com" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Jones Asset Management</span>
+            <span class="outcome-link__url">jonesasset.com</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+          <a class="outcome-link" href="https://www.instagram.com/jonesasset/" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Jones Asset Instagram</span>
+            <span class="outcome-link__url">instagram.com/jonesasset</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     03 · JONES ELITE LOGISTICS — 90%
+══════════════════════════════════════════════ -->
+<section class="outcome outcome--light" id="jel" aria-label="Jones Elite Logistics result">
+  <div class="outcome__inner">
+    <div class="outcome__label" data-num="03">Jones Elite Logistics · SEO &amp; Content Growth</div>
+    <div class="outcome__hero animate-fadeup">90%</div>
+    <p class="outcome__hero-context animate-fadeup delay-1">Growth in new website visitors — with blog content consistently accounting for 85%+ of all organic traffic over a sustained 9-month period.</p>
+
+    <div class="outcome__body">
+      <div class="outcome__story animate-fadeup delay-1">
+        <div class="outcome__story-label">Before &amp; After</div>
+        <div class="outcome__before-after">
+          <div class="ba-cell ba-cell--before">
+            <div class="ba-cell__label">Before</div>
+            <p class="ba-cell__text">The site was invisible in its industry. No distinction between B2B and B2C audiences. No SEO-driven content strategy. No topic authority.</p>
+          </div>
+          <div class="ba-cell ba-cell--after">
+            <div class="ba-cell__label">After</div>
+            <p class="ba-cell__text">90% visitor growth. 187% total visitor growth via AI SEO pipelines. Blog consistently 85%+ of all organic traffic. B2B and B2C verticals repositioned.</p>
+          </div>
+        </div>
+        <p>Jones Elite Logistics needed to speak to two entirely different audiences — B2B clients with complex logistics needs, and B2C customers with different language, different concerns, and different decision timelines. The repositioning meant <strong>building two distinct content strategies under one brand</strong>, with separate messaging, separate audience targeting, and separate content architecture.</p>
+        <p>The SEO-first content strategy built topic authority from the ground up. Blog content became the primary driver of organic discovery — <strong>consistently accounting for 85%+ of all organic traffic</strong> throughout the 9-month period. The charts below show the sustained upward trajectory, not a single spike.</p>
+
+        <!-- Two charts -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;">
+          <div class="chart-wrap">
+            <div class="chart-title">New Visitor Growth (Mar–Nov)</div>
+            <svg class="c-svg" viewBox="0 0 360 170" xmlns="http://www.w3.org/2000/svg">
+              <line x1="44" y1="10" x2="44" y2="148" class="c-axis"/>
+              <line x1="44" y1="148" x2="352" y2="148" class="c-axis"/>
+              <line x1="44" y1="120" x2="352" y2="120" class="c-grid"/>
+              <line x1="44" y1="92"  x2="352" y2="92"  class="c-grid"/>
+              <line x1="44" y1="64"  x2="352" y2="64"  class="c-grid"/>
+              <line x1="44" y1="36"  x2="352" y2="36"  class="c-grid"/>
+              <text x="38" y="151" class="c-lbl" text-anchor="end">0</text>
+              <text x="38" y="123" class="c-lbl" text-anchor="end">1K</text>
+              <text x="38" y="95"  class="c-lbl" text-anchor="end">2K</text>
+              <text x="38" y="67"  class="c-lbl" text-anchor="end">3K</text>
+              <defs>
+                <linearGradient id="jelG" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#162040" stop-opacity="0.3"/>
+                  <stop offset="100%" stop-color="#162040" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <polygon points="78,126 112,122 147,102 182,104 217,102 252,88 287,82 322,82 352,20 352,148 78,148" fill="url(#jelG)" class="c-area"/>
+              <polyline points="78,126 112,122 147,102 182,104 217,102 252,88 287,82 322,82 352,20" stroke="#162040" class="c-line"/>
+              <circle cx="78"  cy="126" r="3.5" fill="white" stroke="#162040" stroke-width="2"/>
+              <circle cx="352" cy="20"  r="5" fill="#c0432a" stroke="white" stroke-width="2"/>
+              <text x="350" y="14" class="c-lbl" text-anchor="end" fill="#c0432a" font-weight="600">+90% ●</text>
+              <text x="78"  y="163" class="c-lbl" text-anchor="middle">Mar</text>
+              <text x="147" y="163" class="c-lbl" text-anchor="middle">May</text>
+              <text x="217" y="163" class="c-lbl" text-anchor="middle">Jul</text>
+              <text x="287" y="163" class="c-lbl" text-anchor="middle">Sep</text>
+              <text x="352" y="163" class="c-lbl" text-anchor="middle">Nov</text>
+            </svg>
+          </div>
+          <div class="chart-wrap">
+            <div class="chart-title">Blog as % of Organic Traffic</div>
+            <svg class="c-svg" viewBox="0 0 360 170" xmlns="http://www.w3.org/2000/svg">
+              <line x1="44" y1="10" x2="44" y2="148" class="c-axis"/>
+              <line x1="44" y1="148" x2="352" y2="148" class="c-axis"/>
+              <line x1="44" y1="120" x2="352" y2="120" class="c-grid"/>
+              <line x1="44" y1="92"  x2="352" y2="92"  class="c-grid"/>
+              <line x1="44" y1="64"  x2="352" y2="64"  class="c-grid"/>
+              <text x="38" y="151" class="c-lbl" text-anchor="end">83%</text>
+              <text x="38" y="123" class="c-lbl" text-anchor="end">86%</text>
+              <text x="38" y="95"  class="c-lbl" text-anchor="end">89%</text>
+              <text x="38" y="67"  class="c-lbl" text-anchor="end">92%</text>
+              <line x1="44" y1="118" x2="352" y2="118" stroke="#c0432a" stroke-width="1" stroke-dasharray="5 3" opacity="0.45"/>
+              <text x="354" y="120" class="c-lbl" fill="#c0432a" font-size="8">85%</text>
+              <defs>
+                <linearGradient id="blogG" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a6b5a" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="#1a6b5a" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <polygon points="78,100 112,80 147,76 182,84 217,100 252,80 287,68 322,80 352,100 352,148 78,148" fill="url(#blogG)" class="c-area"/>
+              <polyline points="78,100 112,80 147,76 182,84 217,100 252,80 287,68 322,80 352,100" stroke="#1a6b5a" class="c-line"/>
+              <circle cx="78"  cy="100" r="3.5" fill="white" stroke="#1a6b5a" stroke-width="2"/>
+              <circle cx="287" cy="68"  r="5" fill="#c0432a" stroke="white" stroke-width="2"/>
+              <circle cx="352" cy="100" r="3.5" fill="white" stroke="#1a6b5a" stroke-width="2"/>
+              <text x="195" y="55" class="c-lbl" fill="#1a6b5a" text-anchor="middle" font-weight="600">Consistently above 85%</text>
+              <text x="78"  y="163" class="c-lbl" text-anchor="middle">Mar</text>
+              <text x="147" y="163" class="c-lbl" text-anchor="middle">May</text>
+              <text x="217" y="163" class="c-lbl" text-anchor="middle">Jul</text>
+              <text x="287" y="163" class="c-lbl" text-anchor="middle">Sep</text>
+              <text x="352" y="163" class="c-lbl" text-anchor="middle">Nov</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome__right animate-fadeup delay-2">
+        <div class="outcome__metrics">
+          <div class="metric-row">
+            <div class="metric-row__num">90%</div>
+            <div class="metric-row__label">New Visitor Growth</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">187%</div>
+            <div class="metric-row__label">Total Visitor Growth via AI SEO</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">85%+</div>
+            <div class="metric-row__label">Blog as % of Organic Traffic</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">9mo</div>
+            <div class="metric-row__label">Sustained Performance Period</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">B2B+B2C</div>
+            <div class="metric-row__label">Dual Vertical Repositioning</div>
+          </div>
+        </div>
+
+        <div class="outcome__links-label">Verify the work</div>
+        <div class="outcome__links">
+          <a class="outcome-link" href="https://www.joneselitelogistics.com" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Jones Elite Logistics Website</span>
+            <span class="outcome-link__url">joneselitelogistics.com</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     04 · KARLE INFRA — 60%
+══════════════════════════════════════════════ -->
+<section class="outcome outcome--dark" id="karle" aria-label="Karle Infra result">
+  <div class="outcome__inner">
+    <div class="outcome__label" data-num="04" style="color:rgba(255,255,255,0.3);">Karle Infra · Social &amp; Brand Growth</div>
+    <div class="outcome__hero animate-fadeup">60%</div>
+    <p class="outcome__hero-context animate-fadeup delay-1">LinkedIn follower growth — alongside 2× engagement, 21% Instagram growth, and 30–40% higher B2B event participation.</p>
+
+    <div class="outcome__body">
+      <div class="outcome__story animate-fadeup delay-1">
+        <div class="outcome__story-label">Before &amp; After</div>
+        <div class="outcome__before-after">
+          <div class="ba-cell ba-cell--before">
+            <div class="ba-cell__label">Before</div>
+            <p class="ba-cell__text">Inconsistent social presence for one of Bangalore's most recognised developers. Low engagement. Fragmented content themes. Events not translating to digital impact.</p>
+          </div>
+          <div class="ba-cell ba-cell--after">
+            <div class="ba-cell__label">After</div>
+            <p class="ba-cell__text">60% LinkedIn growth. 2× engagement. 21% Instagram growth. 30–40% higher B2B event participation. 35% reduction in content workflow turnaround.</p>
+          </div>
+        </div>
+        <p>Karle Infra had the brand equity but not the digital presence to match it. As primary content strategist and creative lead, the work covered every channel and touchpoint — <strong>LinkedIn, Instagram, Google Ads, events, newsletters, quarterly reports, and corporate presentations</strong>.</p>
+        <p>The Tenant Activation campaigns were a particular differentiator: offline community engagement converted into measurable digital following by bringing the Karle Town Centre community into the digital space. <strong>Offline presence becoming online proof.</strong></p>
+
+        <!-- Karle bar chart -->
+        <div style="margin-top:24px;">
+          <div class="chart-title" style="color:rgba(255,255,255,0.3);">Social &amp; Marketing Growth (Nov 2023 – Jul 2024)</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(255,255,255,0.06);">
+            <div style="background:rgba(255,255,255,0.04);padding:20px 12px;text-align:center;">
+              <div style="width:48px;height:80px;background:rgba(255,255,255,0.06);margin:0 auto 12px;display:flex;align-items:flex-end;">
+                <div class="ai-bar-fill" data-width-h="48" style="width:100%;height:48px;background:var(--navy);"></div>
+              </div>
+              <div style="font-family:var(--font-display);font-size:22px;font-weight:900;color:#fff;margin-bottom:4px;">+60%</div>
+              <div style="font-family:var(--font-mono);font-size:9px;text-transform:uppercase;color:rgba(255,255,255,0.3);">LinkedIn Followers</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.04);padding:20px 12px;text-align:center;">
+              <div style="width:48px;height:80px;background:rgba(255,255,255,0.06);margin:0 auto 12px;display:flex;align-items:flex-end;">
+                <div style="width:100%;height:80px;background:var(--teal);"></div>
+              </div>
+              <div style="font-family:var(--font-display);font-size:22px;font-weight:900;color:#fff;margin-bottom:4px;">2×</div>
+              <div style="font-family:var(--font-mono);font-size:9px;text-transform:uppercase;color:rgba(255,255,255,0.3);">LinkedIn Engagement</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.04);padding:20px 12px;text-align:center;">
+              <div style="width:48px;height:80px;background:rgba(255,255,255,0.06);margin:0 auto 12px;display:flex;align-items:flex-end;">
+                <div style="width:100%;height:17px;background:var(--gold);"></div>
+              </div>
+              <div style="font-family:var(--font-display);font-size:22px;font-weight:900;color:#fff;margin-bottom:4px;">+21%</div>
+              <div style="font-family:var(--font-mono);font-size:9px;text-transform:uppercase;color:rgba(255,255,255,0.3);">Instagram Followers</div>
+            </div>
+            <div style="background:rgba(255,255,255,0.04);padding:20px 12px;text-align:center;">
+              <div style="width:48px;height:80px;background:rgba(255,255,255,0.06);margin:0 auto 12px;display:flex;align-items:flex-end;">
+                <div style="width:100%;height:28px;background:var(--accent);"></div>
+              </div>
+              <div style="font-family:var(--font-display);font-size:22px;font-weight:900;color:#fff;margin-bottom:4px;">+35%</div>
+              <div style="font-family:var(--font-mono);font-size:9px;text-transform:uppercase;color:rgba(255,255,255,0.3);">Event Participation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome__right animate-fadeup delay-2">
+        <div class="outcome__metrics">
+          <div class="metric-row">
+            <div class="metric-row__num">60%</div>
+            <div class="metric-row__label">LinkedIn Follower Growth</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">2×</div>
+            <div class="metric-row__label">LinkedIn Engagement Growth</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">21%</div>
+            <div class="metric-row__label">Instagram Channel Growth</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">30–40%</div>
+            <div class="metric-row__label">Higher B2B Event Participation</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num">35%↓</div>
+            <div class="metric-row__label">Content Workflow Turnaround</div>
+          </div>
+        </div>
+
+        <div class="outcome__links-label" style="color:rgba(255,255,255,0.3);">Verify the work</div>
+        <div class="outcome__links">
+          <a class="outcome-link" href="https://in.linkedin.com/company/karle-infra-pvt-ltd" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Karle Infra LinkedIn</span>
+            <span class="outcome-link__url">linkedin.com/company/karle-infra-pvt-ltd</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+          <a class="outcome-link" href="https://www.karletowncentre.com/" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Karle Town Centre</span>
+            <span class="outcome-link__url">karletowncentre.com</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+          <a class="outcome-link" href="https://www.instagram.com/_karletowncentre_/?hl=en" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Karle Town Centre Instagram</span>
+            <span class="outcome-link__url">instagram.com/_karletowncentre_</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     05 · CHAITANYA INDIA — Still Live
+══════════════════════════════════════════════ -->
+<section class="outcome outcome--cream" id="chaitanya" aria-label="Chaitanya India result">
+  <div class="outcome__inner">
+    <div class="outcome__label" data-num="05">Chaitanya India Fin Credit · Brand Built from Zero</div>
+    <div class="outcome__hero animate-fadeup" style="font-size:clamp(52px,9vw,112px);letter-spacing:-2px;">Still Live</div>
+    <p class="outcome__hero-context animate-fadeup delay-1">The strategy and communications infrastructure built in 2019 remains in active use today — years after the engagement ended. That is the measure.</p>
+
+    <div class="outcome__body">
+      <div class="outcome__story animate-fadeup delay-1">
+        <div class="outcome__story-label">Before &amp; After</div>
+        <div class="outcome__before-after">
+          <div class="ba-cell ba-cell--before">
+            <div class="ba-cell__label">Before</div>
+            <p class="ba-cell__text">The founders cared deeply about their customers and the communities they served. Nobody outside the organisation knew. Zero digital presence. Zero communication infrastructure.</p>
+          </div>
+          <div class="ba-cell ba-cell--after">
+            <div class="ba-cell__label">After</div>
+            <p class="ba-cell__text">Complete digital brand, social presence, website, internal communications, town halls, annual report — all built from scratch. Employees reconnected. Customers trusted. Investors understood the mission.</p>
+          </div>
+        </div>
+        <p>Chaitanya India Fin Credit is an RBI and SEBI-regulated NBFC operating in India's most economically marginalised communities. The founders had a genuine conviction — that access to credit at fair terms is a form of dignity — but no channel to make that conviction visible to the world.</p>
+        <p>Built the entire Content &amp; Communications department from zero as the company's first digital hire. <strong>Every process, every channel, every system</strong> established from scratch. The corporate website redesigned from the ground up. Internal town halls created for the first time, connecting leadership with field staff across the country. The Annual Report prepared as a two-person team — going to RBI, SEBI, shareholders, and partners.</p>
+
+        <div class="story-excerpt">
+          <p class="story-excerpt__text">"They cared deeply. My job was to make that care visible — to their customers, their employees, their investors, and the communities whose lives were changing quietly, in places the world wasn't looking."</p>
+          <p class="story-excerpt__attr">From the full Chaitanya story on the About page</p>
+        </div>
+      </div>
+
+      <div class="outcome__right animate-fadeup delay-2">
+        <div class="outcome__metrics">
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">From Zero</div>
+            <div class="metric-row__label">Full Digital Brand &amp; Infrastructure</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">Still Live</div>
+            <div class="metric-row__label">Strategy in Active Use Today</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">All Teams</div>
+            <div class="metric-row__label">Every Process Built from Scratch</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">RBI + SEBI</div>
+            <div class="metric-row__label">Regulated Environment, Compliant Output</div>
+          </div>
+        </div>
+
+        <div class="outcome__links-label">Verify the work &amp; read the story</div>
+        <div class="outcome__links">
+          <a class="outcome-link" href="https://www.chaitanyaindia.in" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Chaitanya India Website</span>
+            <span class="outcome-link__url">chaitanyaindia.in</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+          <a class="outcome-link" href="https://www.linkedin.com/company/chaitanya-india-fin-credit/" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Chaitanya India LinkedIn</span>
+            <span class="outcome-link__url">linkedin.com/company/chaitanya-india-fin-credit</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+          <a class="outcome-link outcome-link--story" href="about.html#chaitanya-story">
+            <span class="outcome-link__label">Read the full story →</span>
+            <span class="outcome-link__url">about.html</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     06 · TRUPP / CRUNCHBASE
+══════════════════════════════════════════════ -->
+<section class="outcome outcome--light" id="crunchbase" aria-label="Trupp Global / Crunchbase result">
+  <div class="outcome__inner">
+    <div class="outcome__label" data-num="06">Trupp Global Technologies · For Crunchbase</div>
+    <div class="outcome__hero animate-fadeup" style="font-size:clamp(64px,10vw,120px);">At Scale</div>
+    <p class="outcome__hero-context animate-fadeup delay-1">SEO quality and content accuracy managed for Crunchbase — one of the world's leading startup and venture capital data platforms — delivering measurable ranking improvements across managed profiles.</p>
+
+    <div class="outcome__body">
+      <div class="outcome__story animate-fadeup delay-1">
+        <div class="outcome__story-label">Before &amp; After</div>
+        <div class="outcome__before-after">
+          <div class="ba-cell ba-cell--before">
+            <div class="ba-cell__label">Before</div>
+            <p class="ba-cell__text">Crunchbase profiles across the global startup ecosystem with inconsistent SEO quality, metadata inaccuracies, and variable content standards reducing organic discoverability.</p>
+          </div>
+          <div class="ba-cell ba-cell--after">
+            <div class="ba-cell__label">After</div>
+            <p class="ba-cell__text">Improved organic visibility across managed profiles through metadata accuracy, keyword alignment, and structured content audit systems — delivering measurable ranking improvements at scale.</p>
+          </div>
+        </div>
+        <p>Working on behalf of Trupp Global Technologies for Crunchbase — one of the world's most authoritative sources on startups and venture capital — required a systematic, data-driven approach to SEO quality at scale. <strong>Every managed profile needed to meet consistent standards</strong> for metadata accuracy, keyword alignment, and structured content before it could rank effectively.</p>
+        <p>The result was measurable ranking improvements across managed profiles — achieved through disciplined application of on-page SEO principles, content audit systems, and consistent compliance with brand guidelines across every managed listing and digital property.</p>
+      </div>
+
+      <div class="outcome__right animate-fadeup delay-2">
+        <div class="outcome__metrics">
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">Improved</div>
+            <div class="metric-row__label">Organic Visibility Across Managed Profiles</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">Daily</div>
+            <div class="metric-row__label">Keyword Research, Audits &amp; Reporting</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-row__num" style="font-size:clamp(16px,1.8vw,22px);letter-spacing:0;">Scale</div>
+            <div class="metric-row__label">Global Startup Ecosystem Coverage</div>
+          </div>
+        </div>
+
+        <div class="outcome__links-label">Verify the platform</div>
+        <div class="outcome__links">
+          <a class="outcome-link" href="https://www.crunchbase.com" target="_blank" rel="noopener">
+            <span class="outcome-link__label">Crunchbase Platform</span>
+            <span class="outcome-link__url">crunchbase.com</span>
+            <span class="outcome-link__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ BOTTOM CTA ══ -->
+<div class="port-footer-cta">
+  <p>Want the complete work history and responsibilities behind these results?</p>
+  <a href="work.html">View the full Work History page →</a>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand">Shreyas <span>Y D</span></div>
+        <div class="site-footer__tagline">Digital Marketing &amp; Content Leader</div>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:8px;">
+          <a href="mailto:contact@ydshreyas.com" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;">contact@ydshreyas.com</a>
+          <a href="tel:+919538087008" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;">+91 95380 87008</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-nav-title">Pages</div>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="results.html">Results &amp; Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-nav-title">Live Work</div>
+        <ul class="footer-nav-list">
+          <li><a href="https://in.linkedin.com/company/jones-recruitzo" target="_blank" rel="noopener">Jones RecruitZo LinkedIn ↗</a></li>
+          <li><a href="https://jonesasset.com" target="_blank" rel="noopener">Jones Asset Management ↗</a></li>
+          <li><a href="https://www.joneselitelogistics.com" target="_blank" rel="noopener">Jones Elite Logistics ↗</a></li>
+          <li><a href="https://karleinfra.com" target="_blank" rel="noopener">Karle Infra ↗</a></li>
+          <li><a href="https://www.chaitanyaindia.in" target="_blank" rel="noopener">Chaitanya India ↗</a></li>
+          <li><a href="https://www.crunchbase.com" target="_blank" rel="noopener">Crunchbase ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="footer-copy">© 2025 Shreyas Y D · All results verified from source documents and live web data</div>
+      <div class="footer-copy">Bengaluru, India</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // ── RESULTS NAV ACTIVE STATE ─────────────────────
+  const outcomes = document.querySelectorAll('.outcome[id]');
+  const navItems = document.querySelectorAll('.results-nav__item');
+  const navIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const id = entry.target.id;
+      navItems.forEach(item => item.classList.toggle('active', item.getAttribute('href') === '#' + id));
+    });
+  }, { threshold: 0.3, rootMargin: '-15% 0px -55% 0px' });
+  outcomes.forEach(o => navIO.observe(o));
+
+  // ── SMOOTH SCROLL ────────────────────────────────
+  navItems.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(item.getAttribute('href'));
+      if (target) {
+        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 130, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ── AI BAR ANIMATION ─────────────────────────────
+  const barIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.querySelectorAll('.ai-bar-fill[data-width]').forEach((bar, i) => {
+        setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, i * 180);
+      });
+      barIO.unobserve(entry.target);
+    });
+  }, { threshold: 0.3 });
+  const aiPanel = document.getElementById('aiBarChart');
+  if (aiPanel) barIO.observe(aiPanel);
+</script>
+</body>
+</html>

@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Shreyas Y D — Filmmaker, Marketer, Builder | Bengaluru</title>
+  <meta name="description" content="The full story of Shreyas Y D — filmmaker-turned-marketer, digital brand builder, content systems architect. 10+ years across fintech, real estate, logistics, recruitment, tech, and media.">
+  <link rel="canonical" href="https://ydshreyas.com/about.html">
+  <meta property="og:title" content="About Shreyas Y D — Filmmaker, Marketer, Builder">
+  <meta property="og:description" content="Filmmaker. Marketer. Builder. Someone who starts every engagement with one question — and builds everything else from the answer.">
+  <meta property="og:url" content="https://ydshreyas.com/about.html">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+
+    /* ══════════════════════════════════════
+       PAGE HEADER
+    ══════════════════════════════════════ */
+    .page-header {
+      background: var(--navy);
+      padding: 140px 48px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(192,67,42,0.13) 0%, transparent 70%);
+    }
+    .page-header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: 80px;
+      width: 360px; height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(26,107,90,0.14) 0%, transparent 70%);
+    }
+    .page-header__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .page-header__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .page-header__eyebrow::before {
+      content: ''; width: 28px; height: 1px;
+      background: var(--teal); flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 7vw, 96px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .page-header h1 em { font-style: italic; color: rgba(200,215,235,0.6); }
+    .page-header__sub {
+      font-size: 18px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+    /* ══════════════════════════════════════
+       PROVERB PULLQUOTE — KANNADA HERO
+    ══════════════════════════════════════ */
+    .ethos-quote {
+      background: var(--ink);
+      padding: 88px 48px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Subtle radial glow */
+    .ethos-quote::after {
+      content: '';
+      position: absolute;
+      top: -120px; left: 50%;
+      transform: translateX(-50%);
+      width: 700px; height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(192,67,42,0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    /* The Kannada script — hero-sized */
+    .ethos-quote__kannada {
+      font-family: var(--font-display);
+      font-size: clamp(56px, 10vw, 130px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: #fff;
+      margin-bottom: 32px;
+      position: relative;
+      z-index: 1;
+    }
+    /* The English meaning — large and bold */
+    .ethos-quote__text {
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.5vw, 48px);
+      font-weight: 900;
+      font-style: italic;
+      color: var(--accent);
+      line-height: 1.1;
+      letter-spacing: -1px;
+      max-width: 820px;
+      margin: 0 auto 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .ethos-quote__text em { color: #fff; }
+    .ethos-quote__source {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ══════════════════════════════════════
+       ETHOS BODY — PHILOSOPHY PILLARS
+    ══════════════════════════════════════ */
+    .ethos-body {
+      padding: 80px 0 72px;
+      background: var(--white);
+    }
+    .ethos-body__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .ethos-body__text p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--mid);
+      margin-bottom: 22px;
+    }
+    .ethos-body__text p strong { font-weight: 600; color: var(--ink); }
+    .ethos-body__text p:last-child { margin-bottom: 0; }
+
+    .ethos-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      background: var(--rule);
+    }
+    .ethos-pillar {
+      background: var(--cream);
+      padding: 22px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: background var(--transition);
+    }
+    .ethos-pillar:hover { background: var(--paper); }
+    .ethos-pillar__icon { font-size: 20px; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .ethos-pillar__title {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .ethos-pillar__text {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ══════════════════════════════════════
+       TWO WORLDS — FULL PROSE VERSION
+    ══════════════════════════════════════ */
+    .two-worlds-full {
+      padding: 88px 0 72px;
+      background: var(--cream);
+    }
+    .two-worlds-full__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      margin-top: 48px;
+      align-items: start;
+    }
+    .world-prose {}
+    .world-prose__label {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: -1px;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .world-prose__label--dark { color: var(--ink); }
+    .world-prose__label--teal { color: var(--teal); }
+    .world-prose__rule {
+      width: 36px;
+      height: 3px;
+      margin-bottom: 24px;
+    }
+    .world-prose__rule--accent { background: var(--accent); }
+    .world-prose__rule--teal   { background: var(--teal); }
+    .world-prose p {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+    .world-prose p:last-child { margin-bottom: 0; }
+    .world-prose p strong { font-weight: 600; color: var(--ink); }
+
+    /* ══════════════════════════════════════
+       THE QUESTION & SYSTEM
+    ══════════════════════════════════════ */
+    .question-system {
+      background: var(--white);
+      padding: 88px 0 72px;
+    }
+    .question-system__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .qs-main {}
+
+    .qs-pullquote {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.5vw, 30px);
+      font-weight: 700;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+      border-left: 4px solid var(--accent);
+      padding-left: 28px;
+      margin: 28px 0 40px;
+    }
+    .qs-pullquote em { color: var(--accent); }
+
+    .qs-sub {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 36px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .qs-sub--teal { color: var(--teal); }
+    .qs-sub::before { content: '◆'; font-size: 8px; }
+
+    .qs-main p {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.85;
+      margin-bottom: 16px;
+    }
+    .qs-main p:last-child { margin-bottom: 0; }
+    .qs-main p strong { font-weight: 600; color: var(--ink); }
+
+    .qs-sidebar {}
+
+    .qs-card {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+    .qs-card:last-child { margin-bottom: 0; }
+    .qs-card__label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 10px;
+    }
+    .qs-card__num {
+      font-family: var(--font-display);
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .qs-card__text {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ══════════════════════════════════════
+       CHAITANYA STORY — THE BRIDGE
+    ══════════════════════════════════════ */
+    .bridge-section {
+      padding: 96px 0 80px;
+      background: var(--cream);
+      scroll-margin-top: 80px;
+    }
+    .bridge-section__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .bridge-header {
+      max-width: 760px;
+      margin-bottom: 56px;
+    }
+    .bridge-header__sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-top: 16px;
+      font-style: italic;
+    }
+
+    .bridge-body {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    .bridge-prose p {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+    .bridge-prose p:last-child { margin-bottom: 0; }
+    .bridge-prose p strong { font-weight: 600; color: var(--ink); }
+
+    .bridge-sub {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 36px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .bridge-sub--teal { color: var(--teal); }
+    .bridge-sub::before { content: '◆'; font-size: 8px; }
+
+    .bridge-callout {
+      background: var(--navy);
+      padding: 36px;
+      color: #fff;
+      margin-top: 36px;
+    }
+    .bridge-callout__text {
+      font-family: var(--font-display);
+      font-size: clamp(18px, 2vw, 24px);
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.35;
+      letter-spacing: -0.3px;
+      margin-bottom: 16px;
+    }
+    .bridge-callout__attr {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .bridge-sidebar {}
+
+    .bridge-fact {
+      border-left: 3px solid var(--rule);
+      padding: 20px 0 20px 20px;
+      margin-bottom: 20px;
+      background: var(--white);
+      padding: 18px 20px;
+      transition: border-color var(--transition);
+    }
+    .bridge-fact:hover { border-left-color: var(--accent); }
+    .bridge-fact__label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 6px;
+    }
+    .bridge-fact__value {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    .bridge-closing {
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 1px solid var(--rule);
+      max-width: 760px;
+    }
+    .bridge-closing__statement {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.8vw, 34px);
+      font-weight: 700;
+      font-style: italic;
+      color: var(--ink);
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .bridge-closing__text {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.8;
+    }
+
+    /* ══════════════════════════════════════
+       ABOUT INTRO — QUICK FACTS SIDEBAR
+    ══════════════════════════════════════ */
+    .about-lead { padding: 88px 0 72px; background: var(--white); }
+    .about-lead__grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .about-lead__text p {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.85;
+      color: var(--mid);
+      margin-bottom: 20px;
+    }
+    .about-lead__text p strong { font-weight: 600; color: var(--ink); }
+    .about-lead__text blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 20px 24px;
+      margin: 32px 0;
+      background: var(--cream);
+    }
+    .about-lead__text blockquote p {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+    .about-sidebar { position: sticky; top: 88px; }
+    .sidebar-card {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      padding: 28px;
+      margin-bottom: 16px;
+    }
+    .sidebar-card__label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 16px;
+    }
+    .info-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .info-list li {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .info-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .info-list__key {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+    .info-list__val { font-size: 14px; font-weight: 400; color: var(--ink); }
+
+    /* ══════════════════════════════════════
+       CAREER TIMELINE
+    ══════════════════════════════════════ */
+    .timeline-section { padding: 80px 0; background: var(--cream); }
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      margin-top: 48px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px; top: 8px; bottom: 8px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent), var(--teal), var(--navy), var(--gold), var(--mid));
+    }
+    .timeline__item { position: relative; margin-bottom: 52px; }
+    .timeline__item:last-child { margin-bottom: 0; }
+    .timeline__dot {
+      position: absolute;
+      left: -35px; top: 6px;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--cream);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .timeline__date {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .timeline__role {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    .timeline__company {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .timeline__company a {
+      text-decoration: none;
+      color: var(--navy);
+      border-bottom: 1px dotted var(--navy);
+      transition: color var(--transition);
+    }
+    .timeline__company a:hover { color: var(--accent); }
+    .timeline__desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.7;
+      max-width: 640px;
+    }
+
+    /* ══════════════════════════════════════
+       PRINCIPLES
+    ══════════════════════════════════════ */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      margin-top: 48px;
+    }
+    .value-item {
+      background: var(--paper);
+      padding: 40px 32px;
+      border-top: 3px solid transparent;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .value-item:hover { background: var(--white); }
+    .value-item:nth-child(1):hover { border-top-color: var(--accent); }
+    .value-item:nth-child(2):hover { border-top-color: var(--teal); }
+    .value-item:nth-child(3):hover { border-top-color: var(--navy); }
+    .value-item:nth-child(4):hover { border-top-color: var(--gold); }
+    .value-item:nth-child(5):hover { border-top-color: var(--mid); }
+    .value-item:nth-child(6):hover { border-top-color: var(--accent); }
+    .value-item__num {
+      font-family: var(--font-display);
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1;
+      color: rgba(0,0,0,0.05);
+      margin-bottom: 16px;
+    }
+    .value-item__title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .value-item__text {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.75;
+    }
+
+    /* ══════════════════════════════════════
+       SKILLS GRID
+    ══════════════════════════════════════ */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .skill-group {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      padding: 28px;
+    }
+    .skill-group__title {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 16px;
+    }
+    .skill-group__list { list-style: none; display: flex; flex-direction: column; gap: 0; }
+    .skill-group__list li {
+      font-size: 14px;
+      color: var(--mid);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .skill-group__list li:last-child { border-bottom: none; }
+    .skill-group__list li::before { content: '▸'; color: var(--gold); font-size: 10px; flex-shrink: 0; }
+
+    /* ══════════════════════════════════════
+       EDU & AWARD
+    ══════════════════════════════════════ */
+    .edu-award-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .award-block {
+      background: var(--navy);
+      color: #fff;
+      padding: 40px;
+    }
+    .award-block__icon { font-size: 40px; margin-bottom: 16px; }
+    .award-block__name {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      font-style: italic;
+      color: #FFD700;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .award-block__from {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .award-block__desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+    }
+    .edu-block {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      padding: 40px;
+    }
+    .edu-block__item {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .edu-block__item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .edu-block__degree {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+    .edu-block__school { font-size: 14px; color: var(--mid); margin-bottom: 4px; }
+    .edu-block__year {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    /* ══════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .page-header { padding: 120px 24px 60px; }
+      .ethos-quote { padding: 56px 24px; }
+      .ethos-body__inner { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; }
+      .ethos-body { padding: 60px 0; }
+      .two-worlds-full__grid { grid-template-columns: 1fr; gap: 48px; }
+      .question-system__inner { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; }
+      .question-system { padding: 64px 0; }
+      .bridge-body { grid-template-columns: 1fr; gap: 40px; }
+      .bridge-section__inner { padding: 0 24px; }
+      .about-lead__grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-sidebar { position: static; }
+      .values-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .edu-award-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="site-nav" id="sitenav">
+  <a class="nav-logo" href="index.html">Shreyas <span>Y D</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="results.html">Results</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="contact.html">Get in Touch →</a>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 1 — PAGE HEADER
+══════════════════════════════════════════════ -->
+<header class="page-header">
+  <div class="page-header__inner">
+    <div class="page-header__eyebrow">About</div>
+    <h1>Who I <em>Am</em></h1>
+    <p class="page-header__sub">Filmmaker. Marketer. Builder. Someone who starts every engagement with one question — and builds everything else from the answer.</p>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 2 — PROVERB PULLQUOTE
+══════════════════════════════════════════════ -->
+<div class="ethos-quote animate-fadeup" aria-label="Work philosophy">
+  <div class="ethos-quote__kannada">ಆಡು ಮುಟ್ಟದ ಎಲೆಯಿಲ್ಲ</div>
+  <blockquote class="ethos-quote__text">"There is no leaf <em>the goat</em> won't touch."</blockquote>
+  <p class="ethos-quote__source">A Kannada proverb — the philosophy behind a decade of work in digital</p>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 3 — PHILOSOPHY PILLARS
+══════════════════════════════════════════════ -->
+<div class="ethos-body" aria-label="Work philosophy explained">
+  <div class="ethos-body__inner">
+    <div class="ethos-body__text animate-fadeup">
+      <div class="t-eyebrow" style="margin-bottom:20px;">Why this matters</div>
+      <p>In Kannada — my mother tongue — there is a saying that roughly translates to <strong>"There is no leaf the goat won't touch."</strong> Having been in the content creation sphere for so long, I have had both the privilege and immense opportunity to work in every aspect of having a digital identity for any brand.</p>
+      <p>Having worked at each step of the ladder — in a process of taking a brand from idea to reality — I can advise you with <strong>innate knowledge of the inner workings of the industry</strong>. From Media Production to Marketing Strategy, I can help you set up processes, resources, and a creative bank of ideas that you can continue to use in taking your big idea to the masses.</p>
+      <p>That breadth is the point. Most marketers master one thing well. I've had to master the whole chain — because at every job, from OTT content writing to building a fintech's entire digital presence from the ground floor, that's what the work demanded.</p>
+    </div>
+    <div class="ethos-pillars animate-fadeup delay-2">
+      <div class="ethos-pillar">
+        <div class="ethos-pillar__icon">🎬</div>
+        <div>
+          <div class="ethos-pillar__title">Media Production</div>
+          <p class="ethos-pillar__text">From ad films and documentaries to OTT content localisation — the creative foundation came first, before the strategy.</p>
+        </div>
+      </div>
+      <div class="ethos-pillar">
+        <div class="ethos-pillar__icon">✍️</div>
+        <div>
+          <div class="ethos-pillar__title">Content Creation &amp; SEO</div>
+          <p class="ethos-pillar__text">Writing for search, writing for people — long-form, short-form, metadata, scripts, briefs. Every format the written word takes online.</p>
+        </div>
+      </div>
+      <div class="ethos-pillar">
+        <div class="ethos-pillar__icon">📣</div>
+        <div>
+          <div class="ethos-pillar__title">Brand Building from Zero</div>
+          <p class="ethos-pillar__text">Building complete digital identities from scratch — social presence, website, comms infrastructure, editorial calendar, community model.</p>
+        </div>
+      </div>
+      <div class="ethos-pillar">
+        <div class="ethos-pillar__icon">📊</div>
+        <div>
+          <div class="ethos-pillar__title">Marketing Strategy &amp; Analytics</div>
+          <p class="ethos-pillar__text">Performance dashboards, campaign management, funnel optimisation, and reporting that actually informs decisions.</p>
+        </div>
+      </div>
+      <div class="ethos-pillar">
+        <div class="ethos-pillar__icon">🤖</div>
+        <div>
+          <div class="ethos-pillar__title">AI Workflows &amp; Systems</div>
+          <p class="ethos-pillar__text">Deploying AI tools to multiply team output, not replace judgment — pipelines, quality control, and the human layer that makes it work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 4 — THE TWO WORLDS (full prose)
+══════════════════════════════════════════════ -->
+<div class="container">
+  <section class="two-worlds-full" aria-label="Background — filmmaker and marketer">
+    <div class="t-eyebrow animate-fadeup">Where it started</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Before the strategy,<br>there was the frame.</h2>
+
+    <div class="two-worlds-full__grid">
+      <div class="world-prose animate-fadeup delay-1">
+        <div class="world-prose__label world-prose__label--dark">The Filmmaker</div>
+        <div class="world-prose__rule world-prose__rule--accent"></div>
+        <p>Most marketers learn their craft from a textbook, an internship, or a YouTube channel. I learned mine on a film set.</p>
+        <p>Before I ever wrote a content brief or ran an SEO audit, I was directing background action, managing casting, and watching how a director could hold two hundred people's attention without saying a word — just by understanding where to point the camera and when to let silence do the work.</p>
+        <p>That experience did something permanent to the way I see brands. I stopped seeing them as organisations with products to sell. I started seeing them as stories that hadn't found their narrator yet.</p>
+        <p>The shift from filmmaking to marketing wasn't a career change. It was a translation. The same questions apply on both sides of it: <strong>Who is the audience? What do they feel before the first word? What do they remember when it's over?</strong> The tools changed. The instinct didn't.</p>
+        <p>What I bring to every brief is that filmmaker's eye — the one that asks not just "what are we saying?" but "how will this land in the body of the person who receives it?" Strategy and analytics tell you whether something is working. The eye tells you why it isn't working before the data comes back.</p>
+      </div>
+
+      <div class="world-prose animate-fadeup delay-2">
+        <div class="world-prose__label world-prose__label--teal">The Marketer</div>
+        <div class="world-prose__rule world-prose__rule--teal"></div>
+        <p>The instinct got the foot in the door. The discipline is what kept it there.</p>
+        <p>Over ten years, I moved through every layer of the digital marketing stack — content writing, SEO, social media management, performance campaigns, brand strategy, analytics, AI workflows. Not because I planned a career path, but because each role demanded the next skill, and I learned it.</p>
+        <p>The filmmaker in me asks the right questions. The marketer builds the system that answers them — <strong>content frameworks, performance dashboards, feedback loops, repurposing engines</strong>. Tools that carry the story forward without the story losing its shape.</p>
+        <p>My current work at Jones Group spans four business units simultaneously: 17,000+ organic followers built from zero, 300% organic lead growth, 187% visitor growth through AI-powered SEO pipelines. Not because I had a bigger budget. Because I had a clearer question, and I built the right system around the answer.</p>
+        <p>That combination — creative instinct and measurement discipline — is what a decade of touching every leaf looks like.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 5 — THE QUESTION & SYSTEM
+══════════════════════════════════════════════ -->
+<div class="question-system" aria-label="The question and the system">
+  <div class="question-system__inner">
+    <div class="qs-main animate-fadeup">
+      <div class="t-eyebrow" style="margin-bottom:12px;">Before the brief</div>
+      <h2 class="h2" style="margin-bottom:0;">The first question I ask every brand.</h2>
+
+      <blockquote class="qs-pullquote">
+        "What is the core belief and message of this brand — not what you do, but what you believe to be true about the world that made you build this thing?"
+      </blockquote>
+
+      <p>The answer to this question is not a tagline. It is not a mission statement written by a committee. It is the thing the founder says when they stop performing and start talking — the conviction underneath the company, the reason it exists beyond the revenue it generates.</p>
+      <p>That answer becomes <strong>the source of truth</strong>. Everything I build points back to it.</p>
+
+      <div class="qs-sub">First, the system.</div>
+      <p>Once the core belief is clear, I build the infrastructure that carries it — consistently, at scale, and without it losing its shape. Content frameworks that give every writer and designer a common north star. Editorial guidelines that make the brand's voice reproducible without making it robotic. Repurposing engines that take one strong idea and extend its reach across every channel and format. Workflow structures that a team can operate independently, long after any single project has ended.</p>
+
+      <div class="qs-sub qs-sub--teal">Then, the measurement.</div>
+      <p>I build performance dashboards that track what actually matters: not just reach and impressions, but the indicators that tell you whether the <strong>core message is landing with the right people in the right form</strong>. Are the right audiences arriving? Are they staying? Are they converting, engaging, returning? Are the content types that most faithfully embody the brand's belief outperforming the ones that don't?</p>
+      <p>These dashboards are not decorative. They go directly into leadership decision-making — answering not just "is what we're doing working?" but which part is working, why, and what to do next.</p>
+
+      <div class="qs-sub">The feedback loop that keeps it honest.</div>
+      <p>Analytics, for me, are not a scoreboard. They are a feedback mechanism. When the numbers say something isn't working, I don't defend the original plan. I ask why. Is the message unclear? Is the format wrong? Is the content reaching the wrong audience? Is the core belief not yet sharp enough in the way it's being expressed?</p>
+      <p>This is the loop: define the belief, build the system, measure the response, refine the expression, measure again. A compounding engine — one that gets smarter the longer it runs, because every cycle of feedback sharpens the system's understanding of what the audience actually needs to hear.</p>
+
+      <div class="qs-sub qs-sub--teal">Growth that knows where it came from.</div>
+      <p>The companies that scale poorly are usually the ones that grew faster than their message could keep up with. The antidote is a communications infrastructure anchored to something real. <strong>A belief strong enough to survive growth. Clear enough to hand to a new hire on day one.</strong> Specific enough that when the team sits down to brief an agency, write a post, or prepare an investor update — they all reach for the same source of truth, independently, without needing to ask.</p>
+      <p style="font-style:italic;color:var(--ink);">The clearest proof I have that this works is not a metric. It is a story.</p>
+    </div>
+
+    <div class="qs-sidebar animate-fadeup delay-2">
+      <div class="qs-card">
+        <div class="qs-card__label">Result of the system</div>
+        <div class="qs-card__num">300%</div>
+        <p class="qs-card__text">Organic lead growth at Jones Group — built entirely without paid advertising.</p>
+      </div>
+      <div class="qs-card">
+        <div class="qs-card__label">Community built from zero</div>
+        <div class="qs-card__num">17K+</div>
+        <p class="qs-card__text">LinkedIn followers for Jones RecruitZo — in under one year, from a blank page.</p>
+      </div>
+      <div class="qs-card">
+        <div class="qs-card__label">SEO visitor growth</div>
+        <div class="qs-card__num">187%</div>
+        <p class="qs-card__text">Website visitor growth through AI-powered SEO content pipelines. 86% of traffic via organic SEO content.</p>
+      </div>
+      <div class="qs-card">
+        <div class="qs-card__label">Systems that outlast the project</div>
+        <div class="qs-card__num" style="font-size:24px;letter-spacing:0;line-height:1.3;">Still Live</div>
+        <p class="qs-card__text">The strategy built at Chaitanya India in 2019 is still in active use today. That is the standard.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 6 — THE BRIDGE: CHAITANYA STORY
+══════════════════════════════════════════════ -->
+<section class="bridge-section" id="chaitanya-story" aria-label="Chaitanya India — the story">
+  <div class="bridge-section__inner">
+
+    <div class="bridge-header animate-fadeup">
+      <div class="t-eyebrow" style="margin-bottom:16px;">The question applied · A story about what content is actually for</div>
+      <h2 class="h2">They cared deeply.<br>Nobody knew.</h2>
+      <p class="bridge-header__sub">How finding a brand's belief changed what its customers, employees, and investors thought — about the company, and about themselves.</p>
+    </div>
+
+    <div class="bridge-body">
+      <div class="bridge-prose animate-fadeup delay-1">
+
+        <p>There is a particular kind of problem that doesn't appear in any marketing textbook, because it isn't really a marketing problem at all. It is a human problem wearing a marketing problem's clothes.</p>
+
+        <p>When I joined Chaitanya India Fin Credit as their first and only digital hire, the founders didn't have a content gap. They had a communication gap — and underneath it, something far more valuable and far more invisible: a genuine conviction about their work that had never once been given a form the world could receive.</p>
+
+        <p>Chaitanya was a microfinance institution operating in some of India's most economically marginalised communities. The founders believed — not as a slogan, but as a lived principle — that access to small amounts of credit at fair terms could change the trajectory of a family's life. They had seen it happen, hundreds of times, in villages and urban settlements across the country. They had watched women start small businesses, send children to school, build homes with solid walls. They had watched people move — slowly, measurably, permanently — from economic precarity into something that felt, for the first time, like stability.</p>
+
+        <p>But none of that was visible from outside the organisation. Chaitanya looked, to the world, like any other financial institution — formal, regulatory, remote. Investors saw a balance sheet. Customers saw a lender. Employees, scattered across the country in field offices far from headquarters, felt disconnected from the people who had built the thing and unclear about why the work they were doing mattered beyond the targets they were asked to hit.</p>
+
+        <p><strong>The founders' care — which was the entire point of the enterprise — had no channel.</strong></p>
+
+        <div class="bridge-sub">The question that changed everything.</div>
+
+        <p>I didn't arrive with a framework and start producing content. I spent the first part of my time there listening — to the founders, to the field staff, to the language people used when they weren't aware they were being listened to. And then I asked the question I always ask first:</p>
+
+        <p style="font-style:italic;font-size:17px;color:var(--ink);padding-left:20px;border-left:3px solid var(--accent);">"What is the core belief of this brand — not what you do, but what you believe to be true about the world that made you build this thing?"</p>
+
+        <p>The answer, when it came, wasn't a positioning statement. It was a story. It was specific. It was about a woman in a village who had used a small loan to buy a sewing machine and was now employing two other women in her neighbourhood. It was about what financial inclusion actually looks like when it works — not as an abstract development goal, but as a Tuesday afternoon in a real person's life that looks nothing like it did a year ago.</p>
+
+        <p>That story — and the belief underneath it, that <strong>access to capital is a form of dignity</strong> — became the source of truth for everything we built.</p>
+
+        <div class="bridge-sub bridge-sub--teal">What grew from it.</div>
+
+        <p>We built the corporate website from the ground up — not as a brochure, but as a document of genuine purpose. The photography, the copy, the structure of every page — all of it was designed to close the distance between what microfinance is in theory and what it does in practice for real people in real places.</p>
+
+        <p>We built internal communications that had never existed before. For the first time, employees working in field offices hundreds of kilometres from headquarters could hear directly from the people who had founded the organisation — not in a circular memo, but in a recorded message that spoke to them as people doing meaningful work. Virtual town halls that connected the ground staff to the founders' conviction. Newsletters that made the scale of what the company was achieving legible to the people who were delivering it every day.</p>
+
+        <p>We prepared the Annual Report not as a regulatory obligation, but as a story of what the year had meant — for the institution, for its borrowers, for the communities it served. It went to regulators, investors, and partners. It was the first time many of them had read an NBFC annual report that made them feel something.</p>
+
+        <div class="bridge-sub">What changed — and why it lasted.</div>
+
+        <p>The result was not just better marketing. It was a brand that finally matched the people behind it.</p>
+
+        <p>Employees felt connected to a purpose they could name. Customers understood they were dealing with an institution that saw them as people, not risk profiles. Investors saw not just a financial model but a mission with evidence behind it. And the communities the company served — whose stories had previously existed only in the memories of field staff and the private conversations of founders — finally had a public record of what their resilience and resourcefulness had built.</p>
+
+        <div class="bridge-callout animate-fadeup">
+          <p class="bridge-callout__text">"That strategy is still in active use today. Not because it was clever. Because it was true."</p>
+          <p class="bridge-callout__attr">Chaitanya India Fin Credit · Strategy built 2019 · Still operational</p>
+        </div>
+
+      </div>
+
+      <div class="bridge-sidebar animate-fadeup delay-2">
+        <div class="bridge-fact">
+          <div class="bridge-fact__label">The organisation</div>
+          <div class="bridge-fact__value">Chaitanya India Fin Credit Pvt. Ltd. — RBI and SEBI-regulated NBFC operating in India's most economically marginalised communities.</div>
+        </div>
+        <div class="bridge-fact">
+          <div class="bridge-fact__label">The gap</div>
+          <div class="bridge-fact__value">Founders with a genuine conviction about microfinance and human dignity — and no channel to make that conviction visible to customers, employees, or investors.</div>
+        </div>
+        <div class="bridge-fact">
+          <div class="bridge-fact__label">My role</div>
+          <div class="bridge-fact__value">First digital hire. Built the entire Content & Communications department from absolute zero — website, social presence, internal comms, town halls, annual report.</div>
+        </div>
+        <div class="bridge-fact">
+          <div class="bridge-fact__label">What it changed</div>
+          <div class="bridge-fact__value">Employees reconnected to purpose. Customers saw a human institution. Investors read a mission, not just a balance sheet. Communities saw their own stories told publicly.</div>
+        </div>
+        <div class="bridge-fact">
+          <div class="bridge-fact__label">The measure</div>
+          <div class="bridge-fact__value">The strategy built in 2019 is still in active use today. That is the standard every system is held to.</div>
+        </div>
+        <div class="bridge-fact">
+          <div class="bridge-fact__label">Visit</div>
+          <div class="bridge-fact__value"><a href="https://www.chaitanyaindia.in" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(192,67,42,0.3);">www.chaitanyaindia.in ↗</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bridge-closing animate-fadeup">
+      <p class="bridge-closing__statement">That is the work I want to do.<br>That is what the whole system is built for.</p>
+      <p class="bridge-closing__text">Content is not a way to fill a website. It is not a distribution mechanism for announcements. At its best, content is the act of making a true thing visible — of taking something that exists in the minds and hearts of the people who built something, and finding the precise form that carries it intact to the people who need to receive it.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 7 — ABOUT INTRO WITH QUICK FACTS
+══════════════════════════════════════════════ -->
+<div class="container">
+  <div class="about-lead">
+    <div class="about-lead__grid">
+      <div class="about-lead__text">
+        <div class="t-eyebrow animate-fadeup" style="margin-bottom:20px;">The full picture</div>
+
+        <p class="animate-fadeup delay-1">I'm a <strong>digital-first marketing and content leader</strong> with over a decade of experience across fintech, real estate, logistics, recruitment, technology, and media. I've built brands from nothing, repositioned tired ones, and grown communities that no one believed were possible — without big ad budgets.</p>
+
+        <blockquote class="animate-fadeup delay-2">
+          <p>"From Media Production to Marketing Strategy — I can help you set up the processes, resources, and creative bank that you can keep using long after I've handed over the keys."</p>
+        </blockquote>
+
+        <p class="animate-fadeup delay-3">My career started in film — as a freelance filmmaker and assistant director — which gave me an understanding of storytelling, visual composition, and audience emotion that most marketers never develop. That creative instinct lives in everything I do: from how I write a LinkedIn post to how I structure a content flywheel.</p>
+
+        <p class="animate-fadeup delay-4">Over 10+ years I've moved through content writing, SEO, social media management, brand marketing, and digital strategy — picking up the full toolkit along the way. My current work at Jones Group spans <strong>four business units simultaneously</strong>, where I've grown an organic community to 17,000+ followers, tripled daily leads with zero ad spend, and deployed AI workflows that made the team twice as productive.</p>
+
+        <p class="animate-fadeup delay-5">What I care most about: <strong>building work that lasts</strong>. Not vanity metrics, not short-term spikes — but systems, flywheels, and brand equity that compound over time. A strategy I built at Chaitanya India in 2019 is still in active use today. That's the kind of work I want to do.</p>
+
+        <div class="animate-fadeup delay-6" style="margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn btn--primary" href="work.html">See My Work →</a>
+          <a class="btn btn--ghost" href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Download Full CV ↓</a>
+        </div>
+      </div>
+
+      <aside class="about-sidebar animate-fadeup delay-3">
+        <div class="sidebar-card">
+          <div class="sidebar-card__label">Quick Facts</div>
+          <ul class="info-list">
+            <li><span class="info-list__key">Location</span><span class="info-list__val">Bengaluru, Karnataka, India</span></li>
+            <li><span class="info-list__key">Current Role</span><span class="info-list__val">Social Media &amp; Content Manager, Jones Group</span></li>
+            <li><span class="info-list__key">Experience</span><span class="info-list__val">10+ years (8 years deeply digital)</span></li>
+            <li><span class="info-list__key">Industries</span><span class="info-list__val">Fintech, Real Estate, Logistics, Recruitment, Tech, Media</span></li>
+            <li><span class="info-list__key">Open To</span><span class="info-list__val">Remote &amp; on-site opportunities</span></li>
+            <li><span class="info-list__key">Languages</span><span class="info-list__val">English, Kannada, Hindi</span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <div class="sidebar-card__label">Contact</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="mailto:contact@ydshreyas.com" style="color:var(--accent);text-decoration:none;font-size:14px;">contact@ydshreyas.com</a>
+            <a href="tel:+919538087008" style="color:var(--mid);text-decoration:none;font-size:14px;">+91 95380 87008</a>
+            <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;font-size:14px;">LinkedIn Profile ↗</a>
+            <a href="https://www.ydshreyas.com" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;font-size:14px;">ydshreyas.com ↗</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 8 (was 7) — CAREER TIMELINE
+══════════════════════════════════════════════ -->
+<section class="timeline-section" aria-label="Career timeline">
+  <div class="container">
+    <div class="t-eyebrow animate-fadeup">Career Timeline</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Every leaf — in order.</h2>
+    <p class="body-lg animate-fadeup delay-2" style="max-width:580px;margin-top:12px;">From the film set to the boardroom, from OTT metadata to AI-powered SEO pipelines — each role added a new layer to the picture.</p>
+
+    <div class="timeline">
+      <div class="timeline__item animate-fadeup">
+        <div class="timeline__dot" style="background:var(--accent);box-shadow:0 0 0 2px var(--accent);"></div>
+        <div class="timeline__date">Aug 2024 — Present</div>
+        <div class="timeline__role">Social Media &amp; Content Manager</div>
+        <div class="timeline__company"><a href="https://www.jonesgroupglobal.com" target="_blank" rel="noopener">Jones Group (4 Business Units)</a></div>
+        <p class="timeline__desc">Managing digital marketing across Jones Asset Management, Jones RecruitZo, and Jones Elite Logistics simultaneously. 300% organic lead growth. 17K+ community built. AI-powered workflows deployed.</p>
+      </div>
+      <div class="timeline__item animate-fadeup delay-1">
+        <div class="timeline__dot" style="background:var(--teal);box-shadow:0 0 0 2px var(--teal);"></div>
+        <div class="timeline__date">Nov 2023 — Jul 2024</div>
+        <div class="timeline__role">Marketing Manager</div>
+        <div class="timeline__company"><a href="https://karleinfra.com" target="_blank" rel="noopener">Karle Infra (Karle Group)</a></div>
+        <p class="timeline__desc">Primary content strategist and creative lead for one of Bangalore's most recognised real estate developers. 60% LinkedIn growth, 2× engagement, 21% Instagram growth.</p>
+      </div>
+      <div class="timeline__item animate-fadeup delay-2">
+        <div class="timeline__dot" style="background:var(--navy);box-shadow:0 0 0 2px var(--navy);"></div>
+        <div class="timeline__date">Aug 2021 — Oct 2023</div>
+        <div class="timeline__role">Content &amp; Brand Marketing Consultant</div>
+        <div class="timeline__company">Self-Employed</div>
+        <p class="timeline__desc">Independent consulting across B2B and B2C — US DevOps startup, UK IT services provider, and multiple domestic brands. Full brand strategy, content ecosystems, and growth frameworks.</p>
+      </div>
+      <div class="timeline__item animate-fadeup delay-3">
+        <div class="timeline__dot" style="background:var(--gold);box-shadow:0 0 0 2px var(--gold);"></div>
+        <div class="timeline__date">Sep 2020 — Aug 2021</div>
+        <div class="timeline__role">Senior Web Search Analyst (Contract)</div>
+        <div class="timeline__company">Trupp Global Technologies · For Crunchbase</div>
+        <p class="timeline__desc">SEO quality and content accuracy for Crunchbase — one of the world's leading startup data platforms. Improved organic visibility across managed profiles at scale.</p>
+      </div>
+      <div class="timeline__item animate-fadeup delay-1">
+        <div class="timeline__dot" style="background:var(--accent);box-shadow:0 0 0 2px var(--accent);"></div>
+        <div class="timeline__date">Feb 2019 — Mar 2020</div>
+        <div class="timeline__role">Assistant Content Manager</div>
+        <div class="timeline__company"><a href="https://www.chaitanyaindia.in" target="_blank" rel="noopener">Chaitanya India Fin Credit</a></div>
+        <p class="timeline__desc">First digital hire at an RBI/SEBI-regulated NBFC — built the entire Content &amp; Communications department from zero. Social presence, website, CMS, pipelines, annual report, regulatory comms.</p>
+      </div>
+      <div class="timeline__item animate-fadeup delay-2">
+        <div class="timeline__dot" style="background:var(--teal);box-shadow:0 0 0 2px var(--teal);"></div>
+        <div class="timeline__date">Aug 2017 — Jan 2019</div>
+        <div class="timeline__role">Content Writer</div>
+        <div class="timeline__company">Prime Focus Technologies · Voot (Viacom18)</div>
+        <p class="timeline__desc">Lead writer for Colors Network–Kannada on Voot. SEO-optimised content for OTT platform. Awarded Excelsior Extra Punch Award for high-quality delivery under critical conditions.</p>
+      </div>
+      <div class="timeline__item animate-fadeup delay-3">
+        <div class="timeline__dot" style="background:var(--mid);box-shadow:0 0 0 2px var(--mid);"></div>
+        <div class="timeline__date">Jan 2014 — Jul 2016</div>
+        <div class="timeline__role">Freelance Filmmaker &amp; Assistant Director</div>
+        <div class="timeline__company">Self-Employed / Feature Film Production</div>
+        <p class="timeline__desc">Ad film production, documentary direction, and feature film assistance. Diploma in Film Making &amp; Direction from FFVA, Bengaluru (2016–17). The visual storytelling instinct that informs all creative work today.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     SECTION 9 (was 8) — PRINCIPLES
+══════════════════════════════════════════════ -->
+<div style="background:var(--white);">
+<div class="container">
+  <section class="section" aria-label="Work principles">
+    <div class="t-eyebrow animate-fadeup">How I Work</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Principles I work by</h2>
+
+    <div class="values-grid">
+      <div class="value-item animate-fadeup delay-1">
+        <div class="value-item__num">01</div>
+        <div class="value-item__title">Audiences are people, not demographics</div>
+        <p class="value-item__text">Segments and personas are useful shorthand. They are not the point. The point is a specific human being with specific things on their mind, deciding whether what you're saying is worth their attention. I write for that person. When the content stops feeling like it was made for a real human, it shows — in the engagement data and in the gut.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-2">
+        <div class="value-item__num">02</div>
+        <div class="value-item__title">Content is infrastructure, not decoration</div>
+        <p class="value-item__text">A piece of content is not a deliverable. It is a component in a system. A blog post is part of an SEO architecture. A LinkedIn post is part of a community-building strategy. An email is part of a nurture sequence. When content is treated as decoration it decays. When it is treated as infrastructure, it compounds.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-3">
+        <div class="value-item__num">03</div>
+        <div class="value-item__title">Measure everything, assume nothing</div>
+        <p class="value-item__text">If it can't be measured, I build the measurement first. Every strategy I run has defined KPIs, baseline tracking, and regular performance reviews. I don't trust instinct alone and I don't trust data alone. Instinct tells me what to try. Data tells me whether I was right. I change course when the data says to — not when it feels like it.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-1">
+        <div class="value-item__num">04</div>
+        <div class="value-item__title">Stay genuinely curious</div>
+        <p class="value-item__text">The landscape changes faster than any playbook. What worked last year is table stakes this year and irrelevant next year. I read obsessively, experiment constantly, and actively track how AI search, AEO, and generative content are changing the rules of discoverability. Curiosity is not a personality trait. It is a professional obligation I take seriously.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-2">
+        <div class="value-item__num">05</div>
+        <div class="value-item__title">AI is a tool, humans need to create</div>
+        <p class="value-item__text">AI makes the process faster. It does not make the thinking unnecessary. Prompts need judgment. Outputs need editing. Strategy needs a human with enough context to know what the brand actually means. I adopted AI workflows early and aggressively, and I know exactly where they help and where they fail. The failure mode is always the same: when the human stops directing and starts approving.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-3">
+        <div class="value-item__num">06</div>
+        <div class="value-item__title">Build systems to last</div>
+        <p class="value-item__text">Every system I build is documented well enough for someone else to run. The work I did at Chaitanya India in 2019 is still in use today. That is not luck. It is a deliberate choice to build things that outlive the project — content governance frameworks, editorial guidelines, workflow structures, repurposing systems. The measure is not how impressive it looks on handover. It is how well it runs when I'm no longer in the room.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 10 — SKILLS
+══════════════════════════════════════════════ -->
+<div style="background:var(--cream);">
+<div class="container">
+  <section class="section" aria-label="Skills">
+    <div class="t-eyebrow animate-fadeup">Skills &amp; Expertise</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">The Full Toolkit</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group animate-fadeup delay-1">
+        <div class="skill-group__title">Digital Marketing</div>
+        <ul class="skill-group__list">
+          <li>SEO, AEO &amp; GEO (Generative Engine Optimisation)</li>
+          <li>Google Ads, Meta Ads, LinkedIn Campaign Manager</li>
+          <li>CRO — Conversion Rate Optimisation</li>
+          <li>Audience Targeting &amp; Remarketing</li>
+          <li>Campaign Planning, Budget Management, ROAS &amp; CPL</li>
+          <li>Landing Page Optimisation</li>
+        </ul>
+      </div>
+      <div class="skill-group animate-fadeup delay-2">
+        <div class="skill-group__title">Content Leadership</div>
+        <ul class="skill-group__list">
+          <li>Content Strategy &amp; Flywheel Design</li>
+          <li>Editorial Planning &amp; Content Operations</li>
+          <li>Brand Messaging &amp; Tone-of-Voice Development</li>
+          <li>Thought Leadership &amp; Executive Communications</li>
+          <li>Multi-Format Content Production</li>
+          <li>Content Repurposing Systems</li>
+        </ul>
+      </div>
+      <div class="skill-group animate-fadeup delay-3">
+        <div class="skill-group__title">Analytics &amp; Reporting</div>
+        <ul class="skill-group__list">
+          <li>Google Analytics (GA4) &amp; Tag Manager</li>
+          <li>Search Console, SEMrush, Ahrefs</li>
+          <li>Performance Dashboards &amp; Automated Reporting</li>
+          <li>Keyword Research &amp; Competitive Analysis</li>
+          <li>Funnel Optimisation &amp; Traffic Analysis</li>
+          <li>KPI Framework Design</li>
+        </ul>
+      </div>
+      <div class="skill-group animate-fadeup delay-4">
+        <div class="skill-group__title">Social Media &amp; Community</div>
+        <ul class="skill-group__list">
+          <li>LinkedIn, Instagram, YouTube, Pinterest, X</li>
+          <li>Community Building &amp; Management (17K+ built)</li>
+          <li>Content Calendars &amp; Scheduling</li>
+          <li>Influencer &amp; UGC Campaign Management</li>
+          <li>Platform Algorithm Optimisation</li>
+          <li>Online Reputation Management</li>
+        </ul>
+      </div>
+      <div class="skill-group animate-fadeup delay-1">
+        <div class="skill-group__title">AI &amp; Automation</div>
+        <ul class="skill-group__list">
+          <li>Prompt Engineering (ChatGPT, Claude, Gemini)</li>
+          <li>AI-Assisted Copywriting &amp; Content Automation</li>
+          <li>OpenAI Sora &amp; Google Veo II (Video AI)</li>
+          <li>AEO/GEO-Optimised Content Workflows</li>
+          <li>Editorial Quality Control (Human-in-the-Loop)</li>
+          <li>Content Repurposing &amp; Automation Systems</li>
+        </ul>
+      </div>
+      <div class="skill-group animate-fadeup delay-2">
+        <div class="skill-group__title">Brand &amp; Leadership</div>
+        <ul class="skill-group__list">
+          <li>Brand Positioning &amp; Integrated Campaigns</li>
+          <li>Video Strategy, Scripting &amp; Production Direction</li>
+          <li>Team Hiring, Onboarding &amp; Upskilling</li>
+          <li>Cross-functional Collaboration &amp; Stakeholder Mgmt</li>
+          <li>Agency &amp; Vendor Management</li>
+          <li>Market Research &amp; Consumer Insights</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 11 — EDUCATION & RECOGNITION
+══════════════════════════════════════════════ -->
+<div style="background:var(--white);">
+<div class="container">
+  <section class="section" aria-label="Education and recognition">
+    <div class="t-eyebrow animate-fadeup">Education &amp; Recognition</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Credentials</h2>
+
+    <div class="edu-award-grid">
+      <div class="award-block animate-fadeup delay-1">
+        <div class="award-block__icon">🏆</div>
+        <div class="award-block__name">Excelsior Extra Punch Award</div>
+        <div class="award-block__from">Prime Focus Technologies · 2018</div>
+        <p class="award-block__desc">Awarded company-wide for "High-Quality Content Delivery at the Time of Critical Need." A live celebrity cricket tournament was made fully streaming-ready on Voot overnight — requiring rapid content creation, SEO optimisation, and metadata preparation under extreme time pressure. A recognition that reflects not just a single project, but a consistent work ethic.</p>
+      </div>
+      <div class="edu-block animate-fadeup delay-2">
+        <div class="sidebar-card__label" style="font-family:var(--font-mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);margin-bottom:24px;">Education</div>
+        <div class="edu-block__item">
+          <div class="edu-block__degree">Diploma in Film Making &amp; Direction</div>
+          <div class="edu-block__school">Film &amp; Fine Arts Academy (FFVA) · Bengaluru</div>
+          <div class="edu-block__year">2016 – 2017</div>
+        </div>
+        <div class="edu-block__item">
+          <div class="edu-block__degree">Bachelor of Engineering</div>
+          <div class="edu-block__school">MIT Mysore · Mysuru, Karnataka</div>
+          <div class="edu-block__year">2011 – 2015</div>
+        </div>
+        <div style="margin-top:24px;padding:16px;background:var(--paper);border-left:3px solid var(--gold);">
+          <p style="font-size:13px;color:var(--mid);line-height:1.7;font-style:italic;">"The real education happened in the field — building things from nothing and learning what the numbers had to say."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand">Shreyas <span>Y D</span></div>
+        <div class="site-footer__tagline">Digital Marketing &amp; Content Leader</div>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:8px;">
+          <a href="mailto:contact@ydshreyas.com" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">contact@ydshreyas.com</a>
+          <a href="tel:+919538087008" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">+91 95380 87008</a>
+          <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">linkedin.com/in/ydshreyas</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-nav-title">Pages</div>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="results.html">Results &amp; Metrics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-nav-title">Download</div>
+        <ul class="footer-nav-list">
+          <li><a href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Full CV (PDF) ↓</a></li>
+          <li><a href="https://www.ydshreyas.com" target="_blank" rel="noopener">ydshreyas.com ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="footer-copy">© 2025 Shreyas Y D</div>
+      <div class="footer-copy">Bengaluru, India</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

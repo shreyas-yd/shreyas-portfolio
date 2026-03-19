@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Shreyas Y D — Digital Marketing Leader | Bengaluru</title>
+  <meta name="description" content="Get in touch with Shreyas Y D — call, email, or connect on LinkedIn. Digital marketing and content leader based in Bengaluru, India.">
+  <link rel="canonical" href="https://ydshreyas.com/contact.html">
+  <meta property="og:title" content="Contact Shreyas Y D">
+  <meta property="og:description" content="Call, email, or connect on LinkedIn. Open to opportunities in Bengaluru and remote.">
+  <meta property="og:url" content="https://ydshreyas.com/contact.html">
+
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      background: var(--navy);
+      padding: 140px 48px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -120px;
+      width: 480px; height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(192,67,42,0.13) 0%, transparent 70%);
+    }
+    .page-header::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: 80px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(26,107,90,0.15) 0%, transparent 70%);
+    }
+    .page-header__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .page-header__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .page-header__eyebrow::before {
+      content: '';
+      width: 28px; height: 1px;
+      background: var(--teal);
+      flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 7vw, 96px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .page-header h1 em { font-style: italic; color: rgba(200,215,235,0.6); }
+    .page-header__sub {
+      font-size: 18px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      max-width: 540px;
+      line-height: 1.6;
+    }
+
+    /* ══════════════════════════════════════
+       PRIMARY ACTION CARDS
+    ══════════════════════════════════════ */
+    .action-section {
+      padding: 88px 0 72px;
+    }
+
+    .action-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--rule);
+      margin-top: 48px;
+    }
+
+    .action-card {
+      background: var(--white);
+      padding: 48px 36px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    /* Accent bar at top, slides in on hover */
+    .action-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    .action-card--call::before   { background: var(--accent); }
+    .action-card--email::before  { background: var(--teal); }
+    .action-card--linkedin::before { background: var(--navy); }
+
+    .action-card:hover { background: var(--cream); }
+    .action-card:hover::before { transform: scaleX(1); }
+
+    .action-card__icon {
+      font-size: 36px;
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .action-card__label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 12px;
+    }
+
+    .action-card__value {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 16px;
+      word-break: break-word;
+    }
+
+    .action-card__desc {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.7;
+      flex: 1;
+      margin-bottom: 28px;
+    }
+
+    .action-card__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 11px 22px;
+      border-radius: var(--radius);
+      border: 1.5px solid;
+      transition: all var(--transition);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .action-card--call .action-card__cta {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    .action-card--call:hover .action-card__cta {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .action-card--email .action-card__cta {
+      color: var(--teal);
+      border-color: var(--teal);
+    }
+    .action-card--email:hover .action-card__cta {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    .action-card--linkedin .action-card__cta {
+      color: var(--navy);
+      border-color: var(--navy);
+    }
+    .action-card--linkedin:hover .action-card__cta {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* ══════════════════════════════════════
+       SECONDARY INFO STRIP
+    ══════════════════════════════════════ */
+    .info-strip {
+      background: var(--cream);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 64px 0;
+    }
+
+    .info-strip__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2px;
+      background: var(--rule);
+    }
+
+    .info-cell {
+      background: var(--cream);
+      padding: 36px 32px;
+    }
+
+    .info-cell__label {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .info-cell__label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .info-cell__content {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.75;
+    }
+
+    .info-cell__content strong {
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ══════════════════════════════════════
+       AVAILABILITY + CV ROW
+    ══════════════════════════════════════ */
+    .bottom-section {
+      padding: 72px 0 80px;
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .availability-panel {
+      background: var(--navy);
+      padding: 44px;
+      color: #fff;
+    }
+
+    .availability-panel__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .availability-panel__eyebrow::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: var(--teal);
+    }
+
+    .availability-panel__heading {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .availability-panel__text {
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    .avail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .avail-tag {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      padding: 6px 14px;
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: var(--radius);
+      transition: all var(--transition);
+    }
+    .avail-tag:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.4);
+      color: #fff;
+    }
+
+    .cv-panel {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      padding: 44px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .cv-panel__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 9px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 16px;
+    }
+
+    .cv-panel__heading {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.5vw, 30px);
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+
+    .cv-panel__text {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--mid);
+      line-height: 1.75;
+      margin-bottom: 28px;
+      flex: 1;
+    }
+
+    .cv-panel__links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .cv-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 12px 22px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all var(--transition);
+      border: 1.5px solid;
+    }
+
+    .cv-btn--primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .cv-btn--primary:hover {
+      background: var(--accent-lt);
+      border-color: var(--accent-lt);
+      transform: translateY(-1px);
+    }
+
+    .cv-btn--ghost {
+      background: transparent;
+      color: var(--mid);
+      border-color: var(--rule);
+    }
+    .cv-btn--ghost:hover {
+      background: var(--ink);
+      color: #fff;
+      border-color: var(--ink);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .page-header { padding: 120px 24px 60px; }
+      .action-cards { grid-template-columns: 1fr; }
+      .info-strip__inner { grid-template-columns: 1fr; padding: 0 24px; }
+      .bottom-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 600px) {
+      .action-card { padding: 36px 24px 32px; }
+      .availability-panel, .cv-panel { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="site-nav" id="sitenav">
+  <a class="nav-logo" href="index.html">Shreyas <span>Y D</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="results.html">Results</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="mailto:contact@ydshreyas.com">Email Me →</a>
+  <button class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ PAGE HEADER ══ -->
+<header class="page-header">
+  <div class="page-header__inner">
+    <div class="page-header__eyebrow">Let's Connect</div>
+    <h1>Get in <em>Touch</em></h1>
+    <p class="page-header__sub">Whether you're hiring, collaborating, or just curious — I prefer a direct conversation. Pick the channel that works best for you.</p>
+  </div>
+</header>
+
+
+<!-- ══ PRIMARY ACTION CARDS ══ -->
+<div class="container">
+  <section class="action-section" aria-label="Contact options">
+
+    <div class="t-eyebrow animate-fadeup">Three ways to reach me</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Pick up, write in,<br>or connect.</h2>
+
+    <div class="action-cards">
+
+      <!-- CALL -->
+      <a class="action-card action-card--call animate-fadeup delay-1"
+         href="tel:+919538087008"
+         aria-label="Call Shreyas Y D">
+        <div class="action-card__icon">📞</div>
+        <div class="action-card__label">Call or WhatsApp</div>
+        <div class="action-card__value">+91 95380 87008</div>
+        <p class="action-card__desc">Available during business hours IST. Happy to take a quick call or respond on WhatsApp if that's easier.</p>
+        <span class="action-card__cta">Call Now →</span>
+      </a>
+
+      <!-- EMAIL -->
+      <a class="action-card action-card--email animate-fadeup delay-2"
+         href="mailto:contact@ydshreyas.com"
+         aria-label="Email Shreyas Y D">
+        <div class="action-card__icon">✉</div>
+        <div class="action-card__label">Email</div>
+        <div class="action-card__value">contact@ydshreyas.com</div>
+        <p class="action-card__desc">For opportunities, project briefs, or anything you'd prefer in writing. I reply within 24 hours — usually much sooner.</p>
+        <span class="action-card__cta">Send Email →</span>
+      </a>
+
+      <!-- LINKEDIN -->
+      <a class="action-card action-card--linkedin animate-fadeup delay-3"
+         href="https://www.linkedin.com/in/ydshreyas/"
+         target="_blank"
+         rel="noopener"
+         aria-label="Connect with Shreyas on LinkedIn">
+        <div class="action-card__icon">💼</div>
+        <div class="action-card__label">LinkedIn</div>
+        <div class="action-card__value">linkedin.com/in/ydshreyas</div>
+        <p class="action-card__desc">Follow my work, read my posts, or send a connection request with a note about what you're working on.</p>
+        <span class="action-card__cta">View Profile →</span>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+
+<!-- ══ INFO STRIP ══ -->
+<div class="info-strip" aria-label="Additional details">
+  <div class="info-strip__inner">
+
+    <div class="info-cell animate-fadeup">
+      <div class="info-cell__label">Location</div>
+      <div class="info-cell__content">
+        <strong>Bengaluru, Karnataka, India</strong><br>
+        Open to on-site roles in Bengaluru and remote opportunities anywhere.
+      </div>
+    </div>
+
+    <div class="info-cell animate-fadeup delay-1">
+      <div class="info-cell__label">Portfolio &amp; Website</div>
+      <div class="info-cell__content">
+        <strong><a href="https://www.ydshreyas.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(192,67,42,0.3);transition:border-color 0.2s;">www.ydshreyas.com</a></strong><br>
+        Full portfolio, writing samples, and case studies at the main site.
+      </div>
+    </div>
+
+    <div class="info-cell animate-fadeup delay-2">
+      <div class="info-cell__label">Response Time</div>
+      <div class="info-cell__content">
+        <strong>Within 24 hours</strong> by email or LinkedIn.<br>
+        Faster on phone and WhatsApp during IST business hours.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ══ AVAILABILITY + CV ══ -->
+<div class="container">
+  <section class="bottom-section" aria-label="Availability and CV">
+    <div class="bottom-grid">
+
+      <!-- Availability -->
+      <div class="availability-panel animate-fadeup">
+        <div class="availability-panel__eyebrow">Current Status</div>
+        <div class="availability-panel__heading">Open to the right opportunity.</div>
+        <p class="availability-panel__text">Currently open to conversations about senior marketing, content leadership, or growth strategy roles — in-person in Bengaluru or fully remote. Also available for freelance and consulting engagements.</p>
+        <div class="avail-tags">
+          <span class="avail-tag">Full-time Roles</span>
+          <span class="avail-tag">Content Leadership</span>
+          <span class="avail-tag">Growth Strategy</span>
+          <span class="avail-tag">Bengaluru On-site</span>
+          <span class="avail-tag">Remote</span>
+          <span class="avail-tag">Freelance / Consulting</span>
+        </div>
+      </div>
+
+      <!-- CV -->
+      <div class="cv-panel animate-fadeup delay-2">
+        <div class="cv-panel__eyebrow">Download</div>
+        <div class="cv-panel__heading">Take the full CV with you.</div>
+        <p class="cv-panel__text">Ten years of work, every role, every responsibility — in a single well-structured document. The PDF includes portfolio links, verified metrics, and the complete skills list.</p>
+        <div class="cv-panel__links">
+          <a class="cv-btn cv-btn--primary" href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Download CV (PDF) ↓</a>
+          <a class="cv-btn cv-btn--ghost" href="work.html">View Full Work History →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__top">
+      <div>
+        <div class="site-footer__brand">Shreyas <span>Y D</span></div>
+        <div class="site-footer__tagline">Digital Marketing &amp; Content Leader</div>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:8px;">
+          <a href="mailto:contact@ydshreyas.com" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">contact@ydshreyas.com</a>
+          <a href="tel:+919538087008" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">+91 95380 87008</a>
+          <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">linkedin.com/in/ydshreyas</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-nav-title">Pages</div>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="results.html">Results &amp; Metrics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-nav-title">Download</div>
+        <ul class="footer-nav-list">
+          <li><a href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Full CV (PDF) ↓</a></li>
+          <li><a href="https://www.ydshreyas.com" target="_blank" rel="noopener">ydshreyas.com ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="footer-copy">© 2025 Shreyas Y D</div>
+      <div class="footer-copy">Bengaluru, India</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
