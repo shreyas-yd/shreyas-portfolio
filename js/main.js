@@ -3,6 +3,16 @@
    ═══════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
+ 
+  // ── GA4 EVENT TRACKING ───────────────────────
+function trackClick(eventName, label) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', eventName, {
+      'event_category': 'engagement',
+      'event_label': label
+    });
+  }
+}
 
   // ── NAV SCROLL STATE ────────────────
   const nav = document.querySelector('.site-nav');
