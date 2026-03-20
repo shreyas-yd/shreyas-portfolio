@@ -16,6 +16,73 @@
     ══════════════════════════════════════ */
     body { background: var(--paper); }
 
+
+    /* ══════════════════════════════════════
+       PAGE HEADER
+    ══════════════════════════════════════ */
+    .page-header {
+      background: var(--navy);
+      padding: 140px 48px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(192,67,42,0.13) 0%, transparent 70%);
+    }
+    .page-header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: 80px;
+      width: 360px; height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(26,107,90,0.14) 0%, transparent 70%);
+    }
+    .page-header__inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .page-header__eyebrow {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .page-header__eyebrow::before {
+      content: ''; width: 28px; height: 1px;
+      background: var(--teal); flex-shrink: 0;
+    }
+    .page-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 7vw, 96px);
+      font-weight: 900;
+      line-height: 0.95;
+      letter-spacing: -2px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .page-header h1 em { font-style: italic; color: rgba(200,215,235,0.6); }
+    .page-header__sub {
+      font-size: 18px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+
+
     /* ══════════════════════════════════════
        PAGE HEADER — CV-grade, no decoration
     ══════════════════════════════════════ */
@@ -79,7 +146,7 @@
     }
     .cv-header__contact a {
       font-family: var(--font-mono);
-      font-size: 11px;
+      font-size: 14px;
       letter-spacing: 0.5px;
       color: rgba(255,255,255,0.4);
       text-decoration: none;
@@ -345,7 +412,7 @@
       grid-template-columns: 160px 1fr auto;
       gap: 32px;
       align-items: start;
-      padding: 40px 0 32px;
+      padding: 92px 0 32px;
     }
 
     .role-block__num {
@@ -366,8 +433,6 @@
       letter-spacing: -2px;
       margin-top: 4px;
     }
-
-    .role-block__meta {}
     .role-block__title {
       font-family: var(--font-display);
       font-size: clamp(24px, 3vw, 36px);
@@ -722,7 +787,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="work.html" class="active">Work</a></li>
-    <li><a href="results.html">Results</a></li>
+    <li><a href="results.html">Impact</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a class="nav-cta" href="contact.html">Get in Touch →</a>
@@ -732,21 +797,21 @@
 </nav>
 
 <!-- ══ CV HEADER ══ -->
-<header class="cv-header">
-  <div class="cv-header__inner">
+<header class="page-header">
+  <div class="page-header__inner">
     <div>
-      <div class="cv-header__eyebrow">Complete Work History &amp; Professional Record</div>
+      <div class="page-header__eyebrow">Complete Work History &amp; Professional Record</div>
       <h1>Shreyas <em>Y D</em></h1>
       <p class="cv-header__role">Digital Marketing &amp; Content Leader &nbsp;·&nbsp; 10+ Years &nbsp;·&nbsp; B2B &amp; B2C &nbsp;·&nbsp; Bengaluru, India</p>
       <div class="cv-header__contact">
         <a href="mailto:contact@ydshreyas.com">contact@ydshreyas.com</a>
         <a href="tel:+919538087008">+91 95380 87008</a>
-        <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener">linkedin.com/in/ydshreyas</a>
-        <a href="https://www.ydshreyas.com" target="_blank" rel="noopener">ydshreyas.com</a>
+        <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener">Linkedin</a>
       </div>
     </div>
     <div class="cv-header__download">
       <a class="btn btn--primary" href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Download Full CV ↓</a>
+      <a class="btn btn--ghost-white" href="results.html">See the Impact →</a>
     </div>
   </div>
 </header>
@@ -1029,7 +1094,8 @@
         <p class="role-block__summary">Worked independently with B2B and B2C clients across tech, retail, and consumer services — repositioning brands, building content ecosystems, and creating digital growth strategies that delivered measurable improvements in search visibility, engagement, and lead quality.</p>
       </div>
       <div class="role-block__links">
-        <a class="role-link" href="https://www.ydshreyas.com" target="_blank" rel="noopener">Full Portfolio</a>
+        <a class="role-link" href="https://cloudzenix.com/" target="_blank" rel="noopener">CloudZenix</a>
+        <a class="role-link" href="https://www.scrumconnect.com/" target="_blank" rel="noopener">Scrummconnect</a>
       </div>
     </div>
     <div class="role-accordions">
@@ -1147,7 +1213,7 @@
   <div class="role-block animate-fadeup" id="chaitanya">
     <div class="role-block__header">
       <div class="role-block__num">05<span>05</span></div>
-      <div class="role-block__meta">
+      <div class="role-block__meta" >
         <div class="role-block__title">Assistant Content Manager</div>
         <div class="role-block__company"><a href="https://www.chaitanyaindia.in" target="_blank" rel="noopener">Chaitanya India Fin Credit Pvt. Ltd.</a></div>
         <div class="role-block__dates">February 2019 – March 2020 &nbsp;·&nbsp; Bengaluru, Karnataka, India</div>
@@ -1237,12 +1303,12 @@
               <li>Served as <strong>lead writer for the 'Kannada Non-Fictional Shows'</strong> content localisation, SEO optimisation, and digital marketing content for Colors Network – Kannada</li>
               <li>Awarded the <strong>Excelsior Extra Punch Award</strong> for 'High-Quality Content Delivery at the Time of Critical Need' — a company-wide recognition for performing exceptionally under pressure</li>
             </ul>
-            <div class="award-inline" style="margin-top:16px;">
+            <!-- <div class="award-inline" style="margin-top:16px;">
               <div class="award-inline__icon">🏆</div>
               <div class="award-inline__name">Excelsior Extra Punch Award</div>
               <div class="award-inline__from">Prime Focus Technologies · 2018</div>
               <p class="award-inline__desc">Awarded for high-quality content delivery at the time of critical need. A live celebrity cricket tournament was made fully streaming-ready on Voot overnight — requiring rapid content creation, SEO optimisation, and metadata preparation under extreme time pressure. Recognised company-wide for exceptional performance.</p>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1278,7 +1344,10 @@
         <div class="role-block__dates">September 2016 – May 2017 &nbsp;·&nbsp; Bengaluru, Karnataka, India</div>
         <p class="role-block__summary">On-set assistant director for a feature film production in Bengaluru — managing large cast groups, leading casting operations, and contributing across pre-production and production phases. Alongside this, completed a Diploma in Film Making &amp; Direction at FFVA, Bengaluru.</p>
       </div>
-      <div class="role-block__links"></div>
+      <div class="role-block__links">
+        <a class="role-link" href="https://www.youtube.com/watch?v=SVVX5PnhKBA" target="_blank" rel="noopener">Film Trailer</a>
+        <a class="role-link" href="https://www.instagram.com/p/BQQYuArhQqW/" target="_blank" rel="noopener">Team Announcement Post</a>
+      </div>
     </div>
     <div class="role-accordions">
       <div class="accordion" data-accordion>
@@ -1352,11 +1421,6 @@
           <div class="edu-item__degree">Diploma in Film Making &amp; Direction</div>
           <div class="edu-item__school">Film &amp; Fine Arts Academy (FFVA) · Bengaluru, Karnataka, India</div>
           <div class="edu-item__year">2016 – 2017</div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-item__degree">Bachelor of Engineering</div>
-          <div class="edu-item__school">MIT Mysore · Mysuru, Karnataka, India</div>
-          <div class="edu-item__year">2011 – 2015</div>
         </div>
       </div>
       <div style="background:var(--navy);padding:28px;display:flex;gap:20px;align-items:flex-start;">
@@ -1445,7 +1509,7 @@
       const id = entry.target.id;
       tlStops.forEach(stop => stop.classList.toggle('active', stop.getAttribute('href') === '#' + id));
     });
-  }, { threshold: 0.35, rootMargin: '-20% 0px -50% 0px' });
+  }, { threshold: 0.45, rootMargin: '-20% 0px -50% 0px' });
   roleBlocks.forEach(b => navIO.observe(b));
 
   // ── SMOOTH SCROLL FOR TIMELINE ───────────────────
@@ -1454,8 +1518,7 @@
       e.preventDefault();
       const target = document.querySelector(stop.getAttribute('href'));
       if (target) {
-        const offset = 210;
-        window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' });
+        window.scrollTo({ top: (target.getBoundingClientRect().top + window.scrollY - 210), behavior: 'smooth' });
       }
     });
   });

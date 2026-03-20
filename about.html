@@ -81,7 +81,7 @@
     ══════════════════════════════════════ */
     .ethos-quote {
       background: var(--ink);
-      padding: 88px 48px 80px;
+      padding: 120px 48px 120px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -100,9 +100,9 @@
     /* The Kannada script — hero-sized */
     .ethos-quote__kannada {
       font-family: var(--font-display);
-      font-size: clamp(56px, 10vw, 130px);
+      font-size: clamp(58px, 6vw, 130px);
       font-weight: 900;
-      line-height: 1.05;
+      line-height: 1;
       letter-spacing: -2px;
       color: #fff;
       margin-bottom: 32px;
@@ -196,7 +196,7 @@
     ══════════════════════════════════════ */
     .two-worlds-full {
       padding: 88px 0 72px;
-      background: var(--cream);
+      /* background: var(--cream); */ /* Optional background for this section */
     }
     .two-worlds-full__grid {
       display: grid;
@@ -205,7 +205,7 @@
       margin-top: 48px;
       align-items: start;
     }
-    .world-prose {}
+    
     .world-prose__label {
       font-family: var(--font-display);
       font-size: clamp(28px, 3vw, 40px);
@@ -251,7 +251,7 @@
       align-items: start;
     }
 
-    .qs-main {}
+    
 
     .qs-pullquote {
       font-family: var(--font-display);
@@ -269,8 +269,9 @@
 
     .qs-sub {
       font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 2px;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--accent);
       margin: 36px 0 12px;
@@ -291,7 +292,7 @@
     .qs-main p:last-child { margin-bottom: 0; }
     .qs-main p strong { font-weight: 600; color: var(--ink); }
 
-    .qs-sidebar {}
+    
 
     .qs-card {
       background: var(--cream);
@@ -370,8 +371,9 @@
 
     .bridge-sub {
       font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 2px;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--accent);
       margin: 36px 0 12px;
@@ -383,15 +385,15 @@
     .bridge-sub::before { content: '◆'; font-size: 8px; }
 
     .bridge-callout {
-      background: var(--navy);
+      background: var(--white);
       padding: 36px;
       color: #fff;
       margin-top: 36px;
     }
     .bridge-callout__text {
       font-family: var(--font-display);
-      font-size: clamp(18px, 2vw, 24px);
-      font-weight: 700;
+      font-size: clamp(18px, 3vw, 24px);
+      font-weight: 800;
       font-style: italic;
       color: #fff;
       line-height: 1.35;
@@ -406,7 +408,7 @@
       color: rgba(255,255,255,0.35);
     }
 
-    .bridge-sidebar {}
+    
 
     .bridge-fact {
       border-left: 3px solid var(--rule);
@@ -458,7 +460,7 @@
     /* ══════════════════════════════════════
        ABOUT INTRO — QUICK FACTS SIDEBAR
     ══════════════════════════════════════ */
-    .about-lead { padding: 88px 0 72px; background: var(--white); }
+    .about-lead { padding: 88px 0 72px; }
     .about-lead__grid {
       display: grid;
       grid-template-columns: 3fr 2fr;
@@ -738,7 +740,7 @@
     ══════════════════════════════════════ */
     @media (max-width: 900px) {
       .page-header { padding: 120px 24px 60px; }
-      .ethos-quote { padding: 56px 24px; }
+      .ethos-quote { padding: 120px 24px; }
       .ethos-body__inner { grid-template-columns: 1fr; gap: 40px; padding: 0 24px; }
       .ethos-body { padding: 60px 0; }
       .two-worlds-full__grid { grid-template-columns: 1fr; gap: 48px; }
@@ -763,7 +765,7 @@
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html" class="active">About</a></li>
     <li><a href="work.html">Work</a></li>
-    <li><a href="results.html">Results</a></li>
+    <li><a href="results.html">Impact</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <a class="nav-cta" href="contact.html">Get in Touch →</a>
@@ -844,6 +846,108 @@
 </div>
 
 
+<!-- ══════════════════════════════════════════════
+     SECTION 9 (was 8) — PRINCIPLES
+══════════════════════════════════════════════ -->
+<div style="background:var(--paper);">
+<div class="container">
+  <section class="section" aria-label="Work principles">
+    <div class="t-eyebrow animate-fadeup">How I Work</div>
+    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Principles I work by</h2>
+
+    <div class="values-grid">
+      <div class="value-item animate-fadeup delay-1">
+        <div class="value-item__num">01</div>
+        <div class="value-item__title">Audiences are people, not demographics</div>
+        <p class="value-item__text">Segments and personas are useful shorthand. They are not the point. The point is a specific human being with specific things on their mind, deciding whether what you're saying is worth their attention. I write for that person. When the content stops feeling like it was made for a real human, it shows — in the engagement data and in the gut.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-2">
+        <div class="value-item__num">02</div>
+        <div class="value-item__title">Content is infrastructure, not decoration</div>
+        <p class="value-item__text">A piece of content is not a deliverable. It is a component in a system. A blog post is part of an SEO architecture. A LinkedIn post is part of a community-building strategy. An email is part of a nurture sequence. When content is treated as decoration it decays. When it is treated as infrastructure, it compounds.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-3">
+        <div class="value-item__num">03</div>
+        <div class="value-item__title">Measure everything, assume nothing</div>
+        <p class="value-item__text">If it can't be measured, I build the measurement first. Every strategy I run has defined KPIs, baseline tracking, and regular performance reviews. I don't trust instinct alone and I don't trust data alone. Instinct tells me what to try. Data tells me whether I was right. I change course when the data says to — not when it feels like it.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-1">
+        <div class="value-item__num">04</div>
+        <div class="value-item__title">Stay genuinely curious</div>
+        <p class="value-item__text">The landscape changes faster than any playbook. What worked last year is table stakes this year and irrelevant next year. I read obsessively, experiment constantly, and actively track how AI search, AEO, and generative content are changing the rules of discoverability. Curiosity is not a personality trait. It is a professional obligation I take seriously.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-2">
+        <div class="value-item__num">05</div>
+        <div class="value-item__title">AI is a tool, humans need to create</div>
+        <p class="value-item__text">AI makes the process faster. It does not make the thinking unnecessary. Prompts need judgment. Outputs need editing. Strategy needs a human with enough context to know what the brand actually means. I adopted AI workflows early and aggressively, and I know exactly where they help and where they fail. The failure mode is always the same: when the human stops directing and starts approving.</p>
+      </div>
+      <div class="value-item animate-fadeup delay-3">
+        <div class="value-item__num">06</div>
+        <div class="value-item__title">Build systems to last</div>
+        <p class="value-item__text">Every system I build is documented well enough for someone else to run. The work I did at Chaitanya India in 2019 is still in use today. That is not luck. It is a deliberate choice to build things that outlive the project — content governance frameworks, editorial guidelines, workflow structures, repurposing systems. The measure is not how impressive it looks on handover. It is how well it runs when I'm no longer in the room.</p>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+
+
+
+<!-- ══════════════════════════════════════════════
+     SECTION 7 — ABOUT INTRO WITH QUICK FACTS
+══════════════════════════════════════════════ -->
+<div style="background:var(--white);">
+<div class="container">
+  <div class="about-lead">
+    <div class="about-lead__grid">
+      <div class="about-lead__text">
+        <div class="t-eyebrow animate-fadeup" style="margin-bottom:20px;">The full picture</div>
+
+        <p class="animate-fadeup delay-1">I'm a <strong>digital-first marketing and content leader</strong> with over a decade of experience across fintech, real estate, logistics, recruitment, technology, and media. I've built brands from nothing, repositioned tired ones, and grown communities that no one believed were possible — without big ad budgets.</p>
+
+        <blockquote class="animate-fadeup delay-2">
+          <p>"From Media Production to Marketing Strategy — I can help you set up the processes, resources, and creative bank that you can keep using long after I've handed over the keys."</p>
+        </blockquote>
+
+        <p class="animate-fadeup delay-3">My career started in film — as a freelance filmmaker and assistant director — which gave me an understanding of storytelling, visual composition, and audience emotion that most marketers never develop. That creative instinct lives in everything I do: from how I write a LinkedIn post to how I structure a content flywheel.</p>
+
+        <p class="animate-fadeup delay-4">Over 10+ years I've moved through content writing, SEO, social media management, brand marketing, and digital strategy — picking up the full toolkit along the way. My current work at Jones Group spans <strong>four business units simultaneously</strong>, where I've grown an organic community to 17,000+ followers, tripled daily leads with zero ad spend, and deployed AI workflows that made the team twice as productive.</p>
+
+        <p class="animate-fadeup delay-5">What I care most about: <strong>building work that lasts</strong>. Not vanity metrics, not short-term spikes — but systems, flywheels, and brand equity that compound over time. A strategy I built at Chaitanya India in 2019 is still in active use today. That's the kind of work I want to do.</p>
+
+        <div class="animate-fadeup delay-6" style="margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn btn--primary" href="work.html">See My Work →</a>
+          <a class="btn btn--ghost" href="results.html" target="_blank" rel="noopener">See the Impact →</a>
+        </div>
+      </div>
+
+      <aside class="about-sidebar animate-fadeup delay-3">
+        <div class="sidebar-card">
+          <div class="sidebar-card__label">Quick Facts</div>
+          <ul class="info-list">
+            <li><span class="info-list__key">Location</span><span class="info-list__val">Bengaluru, Karnataka, India</span></li>
+            <li><span class="info-list__key">Current Role</span><span class="info-list__val">Social Media &amp; Content Manager, Jones Group</span></li>
+            <li><span class="info-list__key">Experience</span><span class="info-list__val">10+ years (8 years deeply digital)</span></li>
+            <li><span class="info-list__key">Industries</span><span class="info-list__val">Fintech, Real Estate, Logistics, Recruitment, Tech, Media</span></li>
+            <li><span class="info-list__key">Open To</span><span class="info-list__val">Remote &amp; on-site opportunities</span></li>
+            <li><span class="info-list__key">Languages</span><span class="info-list__val">English, Kannada, Hindi</span></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <div class="sidebar-card__label">Contact</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <a href="mailto:contact@ydshreyas.com" style="color:var(--accent);text-decoration:none;font-size:14px;">contact@ydshreyas.com</a>
+            <a href="tel:+919538087008" style="color:var(--mid);text-decoration:none;font-size:14px;">+91 95380 87008</a>
+            <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;font-size:14px;">LinkedIn Profile ↗</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+</div>
+
+
 
 <!-- ══════════════════════════════════════════════
      SECTION 4 — THE TWO WORLDS (full prose)
@@ -902,7 +1006,7 @@
       <p>I build performance dashboards that track what actually matters: not just reach and impressions, but the indicators that tell you whether the <strong>core message is landing with the right people in the right form</strong>. Are the right audiences arriving? Are they staying? Are they converting, engaging, returning? Are the content types that most faithfully embody the brand's belief outperforming the ones that don't?</p>
       <p>These dashboards are not decorative. They go directly into leadership decision-making — answering not just "is what we're doing working?" but which part is working, why, and what to do next.</p>
 
-      <div class="qs-sub">The feedback loop that keeps it honest.</div>
+      <div class="qs-sub">feedback loop that keeps it honest.</div>
       <p>Analytics, for me, are not a scoreboard. They are a feedback mechanism. When the numbers say something isn't working, I don't defend the original plan. I ask why. Is the message unclear? Is the format wrong? Is the content reaching the wrong audience? Is the core belief not yet sharp enough in the way it's being expressed?</p>
       <p>This is the loop: define the belief, build the system, measure the response, refine the expression, measure again. A compounding engine — one that gets smarter the longer it runs, because every cycle of feedback sharpens the system's understanding of what the audience actually needs to hear.</p>
 
@@ -986,10 +1090,8 @@
         <p>Employees felt connected to a purpose they could name. Customers understood they were dealing with an institution that saw them as people, not risk profiles. Investors saw not just a financial model but a mission with evidence behind it. And the communities the company served — whose stories had previously existed only in the memories of field staff and the private conversations of founders — finally had a public record of what their resilience and resourcefulness had built.</p>
 
         <div class="bridge-callout animate-fadeup">
-          <p class="bridge-callout__text">"That strategy is still in active use today. Not because it was clever. Because it was true."</p>
-          <p class="bridge-callout__attr">Chaitanya India Fin Credit · Strategy built 2019 · Still operational</p>
+          <p ><strong class="bridge-callout__text">"That strategy is still in active use today. Not because it was clever. Because it was true."</strong></p>        
         </div>
-
       </div>
 
       <div class="bridge-sidebar animate-fadeup delay-2">
@@ -1028,66 +1130,11 @@
   </div>
 </section>
 
-
-
-<!-- ══════════════════════════════════════════════
-     SECTION 7 — ABOUT INTRO WITH QUICK FACTS
-══════════════════════════════════════════════ -->
-<div class="container">
-  <div class="about-lead">
-    <div class="about-lead__grid">
-      <div class="about-lead__text">
-        <div class="t-eyebrow animate-fadeup" style="margin-bottom:20px;">The full picture</div>
-
-        <p class="animate-fadeup delay-1">I'm a <strong>digital-first marketing and content leader</strong> with over a decade of experience across fintech, real estate, logistics, recruitment, technology, and media. I've built brands from nothing, repositioned tired ones, and grown communities that no one believed were possible — without big ad budgets.</p>
-
-        <blockquote class="animate-fadeup delay-2">
-          <p>"From Media Production to Marketing Strategy — I can help you set up the processes, resources, and creative bank that you can keep using long after I've handed over the keys."</p>
-        </blockquote>
-
-        <p class="animate-fadeup delay-3">My career started in film — as a freelance filmmaker and assistant director — which gave me an understanding of storytelling, visual composition, and audience emotion that most marketers never develop. That creative instinct lives in everything I do: from how I write a LinkedIn post to how I structure a content flywheel.</p>
-
-        <p class="animate-fadeup delay-4">Over 10+ years I've moved through content writing, SEO, social media management, brand marketing, and digital strategy — picking up the full toolkit along the way. My current work at Jones Group spans <strong>four business units simultaneously</strong>, where I've grown an organic community to 17,000+ followers, tripled daily leads with zero ad spend, and deployed AI workflows that made the team twice as productive.</p>
-
-        <p class="animate-fadeup delay-5">What I care most about: <strong>building work that lasts</strong>. Not vanity metrics, not short-term spikes — but systems, flywheels, and brand equity that compound over time. A strategy I built at Chaitanya India in 2019 is still in active use today. That's the kind of work I want to do.</p>
-
-        <div class="animate-fadeup delay-6" style="margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;">
-          <a class="btn btn--primary" href="work.html">See My Work →</a>
-          <a class="btn btn--ghost" href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Download Full CV ↓</a>
-        </div>
-      </div>
-
-      <aside class="about-sidebar animate-fadeup delay-3">
-        <div class="sidebar-card">
-          <div class="sidebar-card__label">Quick Facts</div>
-          <ul class="info-list">
-            <li><span class="info-list__key">Location</span><span class="info-list__val">Bengaluru, Karnataka, India</span></li>
-            <li><span class="info-list__key">Current Role</span><span class="info-list__val">Social Media &amp; Content Manager, Jones Group</span></li>
-            <li><span class="info-list__key">Experience</span><span class="info-list__val">10+ years (8 years deeply digital)</span></li>
-            <li><span class="info-list__key">Industries</span><span class="info-list__val">Fintech, Real Estate, Logistics, Recruitment, Tech, Media</span></li>
-            <li><span class="info-list__key">Open To</span><span class="info-list__val">Remote &amp; on-site opportunities</span></li>
-            <li><span class="info-list__key">Languages</span><span class="info-list__val">English, Kannada, Hindi</span></li>
-          </ul>
-        </div>
-        <div class="sidebar-card">
-          <div class="sidebar-card__label">Contact</div>
-          <div style="display:flex;flex-direction:column;gap:10px;">
-            <a href="mailto:contact@ydshreyas.com" style="color:var(--accent);text-decoration:none;font-size:14px;">contact@ydshreyas.com</a>
-            <a href="tel:+919538087008" style="color:var(--mid);text-decoration:none;font-size:14px;">+91 95380 87008</a>
-            <a href="https://www.linkedin.com/in/ydshreyas/" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;font-size:14px;">LinkedIn Profile ↗</a>
-            <a href="https://www.ydshreyas.com" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;font-size:14px;">ydshreyas.com ↗</a>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </div>
-</div>
-
-
-
 <!-- ══════════════════════════════════════════════
      SECTION 8 (was 7) — CAREER TIMELINE
 ══════════════════════════════════════════════ -->
+
+<!--
 <section class="timeline-section" aria-label="Career timeline">
   <div class="container">
     <div class="t-eyebrow animate-fadeup">Career Timeline</div>
@@ -1147,58 +1194,13 @@
     </div>
   </div>
 </section>
-
-<!-- ══════════════════════════════════════════════
-     SECTION 9 (was 8) — PRINCIPLES
-══════════════════════════════════════════════ -->
-<div style="background:var(--white);">
-<div class="container">
-  <section class="section" aria-label="Work principles">
-    <div class="t-eyebrow animate-fadeup">How I Work</div>
-    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Principles I work by</h2>
-
-    <div class="values-grid">
-      <div class="value-item animate-fadeup delay-1">
-        <div class="value-item__num">01</div>
-        <div class="value-item__title">Audiences are people, not demographics</div>
-        <p class="value-item__text">Segments and personas are useful shorthand. They are not the point. The point is a specific human being with specific things on their mind, deciding whether what you're saying is worth their attention. I write for that person. When the content stops feeling like it was made for a real human, it shows — in the engagement data and in the gut.</p>
-      </div>
-      <div class="value-item animate-fadeup delay-2">
-        <div class="value-item__num">02</div>
-        <div class="value-item__title">Content is infrastructure, not decoration</div>
-        <p class="value-item__text">A piece of content is not a deliverable. It is a component in a system. A blog post is part of an SEO architecture. A LinkedIn post is part of a community-building strategy. An email is part of a nurture sequence. When content is treated as decoration it decays. When it is treated as infrastructure, it compounds.</p>
-      </div>
-      <div class="value-item animate-fadeup delay-3">
-        <div class="value-item__num">03</div>
-        <div class="value-item__title">Measure everything, assume nothing</div>
-        <p class="value-item__text">If it can't be measured, I build the measurement first. Every strategy I run has defined KPIs, baseline tracking, and regular performance reviews. I don't trust instinct alone and I don't trust data alone. Instinct tells me what to try. Data tells me whether I was right. I change course when the data says to — not when it feels like it.</p>
-      </div>
-      <div class="value-item animate-fadeup delay-1">
-        <div class="value-item__num">04</div>
-        <div class="value-item__title">Stay genuinely curious</div>
-        <p class="value-item__text">The landscape changes faster than any playbook. What worked last year is table stakes this year and irrelevant next year. I read obsessively, experiment constantly, and actively track how AI search, AEO, and generative content are changing the rules of discoverability. Curiosity is not a personality trait. It is a professional obligation I take seriously.</p>
-      </div>
-      <div class="value-item animate-fadeup delay-2">
-        <div class="value-item__num">05</div>
-        <div class="value-item__title">AI is a tool, humans need to create</div>
-        <p class="value-item__text">AI makes the process faster. It does not make the thinking unnecessary. Prompts need judgment. Outputs need editing. Strategy needs a human with enough context to know what the brand actually means. I adopted AI workflows early and aggressively, and I know exactly where they help and where they fail. The failure mode is always the same: when the human stops directing and starts approving.</p>
-      </div>
-      <div class="value-item animate-fadeup delay-3">
-        <div class="value-item__num">06</div>
-        <div class="value-item__title">Build systems to last</div>
-        <p class="value-item__text">Every system I build is documented well enough for someone else to run. The work I did at Chaitanya India in 2019 is still in use today. That is not luck. It is a deliberate choice to build things that outlive the project — content governance frameworks, editorial guidelines, workflow structures, repurposing systems. The measure is not how impressive it looks on handover. It is how well it runs when I'm no longer in the room.</p>
-      </div>
-    </div>
-  </section>
-</div>
-</div>
-
+-->
 
 
 <!-- ══════════════════════════════════════════════
      SECTION 10 — SKILLS
 ══════════════════════════════════════════════ -->
-<div style="background:var(--cream);">
+<div style="background:var(--white);">
 <div class="container">
   <section class="section" aria-label="Skills">
     <div class="t-eyebrow animate-fadeup">Skills &amp; Expertise</div>
@@ -1270,45 +1272,6 @@
           <li>Agency &amp; Vendor Management</li>
           <li>Market Research &amp; Consumer Insights</li>
         </ul>
-      </div>
-    </div>
-  </section>
-</div>
-</div>
-
-
-
-<!-- ══════════════════════════════════════════════
-     SECTION 11 — EDUCATION & RECOGNITION
-══════════════════════════════════════════════ -->
-<div style="background:var(--white);">
-<div class="container">
-  <section class="section" aria-label="Education and recognition">
-    <div class="t-eyebrow animate-fadeup">Education &amp; Recognition</div>
-    <h2 class="h2 animate-fadeup delay-1" style="margin-top:16px;">Credentials</h2>
-
-    <div class="edu-award-grid">
-      <div class="award-block animate-fadeup delay-1">
-        <div class="award-block__icon">🏆</div>
-        <div class="award-block__name">Excelsior Extra Punch Award</div>
-        <div class="award-block__from">Prime Focus Technologies · 2018</div>
-        <p class="award-block__desc">Awarded company-wide for "High-Quality Content Delivery at the Time of Critical Need." A live celebrity cricket tournament was made fully streaming-ready on Voot overnight — requiring rapid content creation, SEO optimisation, and metadata preparation under extreme time pressure. A recognition that reflects not just a single project, but a consistent work ethic.</p>
-      </div>
-      <div class="edu-block animate-fadeup delay-2">
-        <div class="sidebar-card__label" style="font-family:var(--font-mono);font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);margin-bottom:24px;">Education</div>
-        <div class="edu-block__item">
-          <div class="edu-block__degree">Diploma in Film Making &amp; Direction</div>
-          <div class="edu-block__school">Film &amp; Fine Arts Academy (FFVA) · Bengaluru</div>
-          <div class="edu-block__year">2016 – 2017</div>
-        </div>
-        <div class="edu-block__item">
-          <div class="edu-block__degree">Bachelor of Engineering</div>
-          <div class="edu-block__school">MIT Mysore · Mysuru, Karnataka</div>
-          <div class="edu-block__year">2011 – 2015</div>
-        </div>
-        <div style="margin-top:24px;padding:16px;background:var(--paper);border-left:3px solid var(--gold);">
-          <p style="font-size:13px;color:var(--mid);line-height:1.7;font-style:italic;">"The real education happened in the field — building things from nothing and learning what the numbers had to say."</p>
-        </div>
       </div>
     </div>
   </section>
