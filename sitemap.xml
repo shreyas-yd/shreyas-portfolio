@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://ydshreyas.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://ydshreyas.com/about.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ydshreyas.com/work.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://ydshreyas.com/results.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ydshreyas.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+
+  <!-- Homepage — highest priority, changes most often -->
+  <url>
+    <loc>https://ydshreyas.com/</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About — high priority, changes occasionally -->
+  <url>
+    <loc>https://ydshreyas.com/about.html</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Work — high priority, changes when career updates -->
+  <url>
+    <loc>https://ydshreyas.com/work.html</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Results — high priority for business decisions -->
+  <url>
+    <loc>https://ydshreyas.com/results.html</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact — lower priority, rarely changes -->
+  <url>
+    <loc>https://ydshreyas.com/contact.html</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

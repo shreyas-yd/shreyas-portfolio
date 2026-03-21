@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Shreyas Y D — Filmmaker, Marketer, Builder | Bengaluru</title>
+  <meta name="description" content="The inspiration behind Shreyas Y D — filmmaker-turned-marketer, digital brand builder, content systems architect. 10+ years across fintech, real estate, logistics, recruitment, tech, and media.">
+  <link rel="canonical" href="https://ydshreyas.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ydshreyas.com/">
+  <meta property="og:title" content="Shreyas Y D — Digital Marketing & Content Leader">
+  <meta property="og:description" content="Filmmaker-turned-marketer. 10+ years building brands, organic communities, and growth engines. 300% organic lead growth. 17K+ community built from zero.">
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE06LFKPMT"></script>
 <script>
@@ -21,14 +33,45 @@
     })(window, document, "clarity", "script", "vym36u4i45");
 </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Shreyas Y D — Filmmaker, Marketer, Builder | Bengaluru</title>
-  <meta name="description" content="The full story of Shreyas Y D — filmmaker-turned-marketer, digital brand builder, content systems architect. 10+ years across fintech, real estate, logistics, recruitment, tech, and media.">
-  <link rel="canonical" href="https://ydshreyas.com/about.html">
-  <meta property="og:title" content="About Shreyas Y D — Filmmaker, Marketer, Builder">
-  <meta property="og:description" content="Filmmaker. Marketer. Builder. Someone who starts every engagement with one question — and builds everything else from the answer.">
-  <meta property="og:url" content="https://ydshreyas.com/about.html">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shreyas Y D",
+    "url": "https://ydshreyas.com",
+    "email": "contact@ydshreyas.com",
+    "telephone": "+919538087008",
+    "jobTitle": "Digital Marketing & Content Leader",
+    "worksFor": { "@type": "Organization", "name": "D.E.S.A.I Media" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+    "knowsAbout": ["Digital Marketing", "Content Strategy", "SEO", "Social Media Marketing", "Brand Building", "AI Content Workflows"],
+    "sameAs": ["https://www.linkedin.com/in/ydshreyas/", "https://www.ydshreyas.com"]
+  }
+  </script>
+
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://ydshreyas.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://ydshreyas.com/about.html"
+    }
+  ]
+}
+</script>
+
+
   <link rel="stylesheet" href="css/main.css">
   <style>
 
@@ -755,6 +798,42 @@
       color: var(--faint);
     }
 
+
+    /* ══════════════════════════════════════
+       CTA STRIP
+    ══════════════════════════════════════ */
+    .cta-strip {
+      background: var(--navy);
+      padding: 88px 48px;
+      text-align: center;
+    }
+    .cta-strip h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+      line-height: 1.1;
+    }
+    .cta-strip p {
+      font-size: 17px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 36px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.65;
+    }
+    .cta-strip__actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     /* ══════════════════════════════════════
        RESPONSIVE
     ══════════════════════════════════════ */
@@ -788,7 +867,7 @@
     <li><a href="results.html">Impact</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a class="nav-cta" href="contact.html">Get in Touch →</a>
+  <a class="nav-cta" href="contact.html" onclick="trackClick('cta_click', 'Get in Touch-Navbar')">Get in Touch →</a>
   <button class="nav-hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
@@ -1298,6 +1377,19 @@
 </div>
 </div>
 
+
+<!-- ══════════════════════════════════════════════
+            CTA
+══════════════════════════════════════════════ -->
+<div class="cta-strip" role="complementary">
+  <h2>Your big idea deserves a voice.<br>Let's find it.</h2>
+  <div class="cta-strip__actions">
+    <a class="btn btn--primary" href="contact.html" onclick="trackClick('cta_click', 'Get in Touch-CTA')">Get in Touch →</a>
+  </div>
+</div>
+
+
+
 <!-- ══ FOOTER ══ -->
 <footer class="site-footer">
   <div class="site-footer__inner">
@@ -1324,8 +1416,8 @@
       <div>
         <div class="footer-nav-title">Download</div>
         <ul class="footer-nav-list">
-          <li><a href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener">Full CV (PDF) ↓</a></li>
-          <li><a href="https://www.ydshreyas.com" target="_blank" rel="noopener">ydshreyas.com ↗</a></li>
+          <li><a href="Shreyas_YD_CV.pdf" target="_blank" rel="noopener" onclick="trackClick('cv_download', 'CV Download')">Full CV (PDF) ↓</a></li>
+          
         </ul>
       </div>
     </div>
