@@ -242,12 +242,16 @@
     .stats-band {
       background: var(--navy);
       overflow: hidden;
+      display: grid;
+      place-items: center;
       border-top: 1px solid rgba(255,255,255,0.06);
     }
     .stats-inner {
-      max-width: 1120px;
+      
+      max-width: 1120px; 
       margin: 0 auto;
       display: grid;
+      place-items: center;
       grid-template-columns: repeat(6, 1fr);
     }
     .stat-item {
@@ -748,16 +752,12 @@
 ══════════════════════════════════════════════ -->
 <div class="stats-band" role="region" aria-label="Key metrics">
   <div class="stats-inner">
-    <div class="stat-item animate-fadeup">
-      <div class="stat-item__num" data-count data-target="300" data-suffix="%">300%</div>
-      <div class="stat-item__label">Organic Lead Growth</div>
-    </div>
     <div class="stat-item animate-fadeup delay-1">
       <div class="stat-item__num">17K+</div>
       <div class="stat-item__label">Community Built from Zero</div>
     </div>
     <div class="stat-item animate-fadeup delay-2">
-      <div class="stat-item__num" data-count data-target="187" data-suffix="%">187%</div>
+      <div class="stat-item__num" data-count data-target="87" data-suffix="%">87%</div>
       <div class="stat-item__label">Visitor Growth via SEO</div>
     </div>
     <div class="stat-item animate-fadeup delay-3">
@@ -870,7 +870,7 @@
         <span class="work-card__link" style="color:var(--teal);">View Case Study →</span>
       </a>
       <a class="work-card work-card--gold animate-fadeup delay-3" href="work.html#jel">
-        <div class="work-card__num" style="color:var(--gold);">90%</div>
+        <div class="work-card__num" style="color:var(--gold);">87%</div>
         <div class="work-card__label">Jones Elite Logistics — SEO Growth</div>
         <p class="work-card__desc">90% growth in new visitors. Blog content consistently 85%+ of all organic traffic over 9 months. B2B and B2C repositioning.</p>
         <span class="work-card__link" style="color:var(--gold);">View Case Study →</span>
