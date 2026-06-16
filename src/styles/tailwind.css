@@ -1,0 +1,5 @@
+/* Tailwind layers — utilities are available everywhere; preflight is disabled
+   in tailwind.config.ts so the legacy design system stays untouched. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
