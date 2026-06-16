@@ -20,7 +20,7 @@ const schema = a.schema({
     })
     .authorization((allow) => [
       allow.publicApiKey().to(['create']),
-      allow.authenticated().to(['read', 'list', 'delete']),
+      allow.authenticated().to(['read', 'delete']),
     ]),
 
   NewsletterSubscriber: a
@@ -30,7 +30,7 @@ const schema = a.schema({
     })
     .authorization((allow) => [
       allow.publicApiKey().to(['create']),
-      allow.authenticated().to(['read', 'list', 'delete']),
+      allow.authenticated().to(['read', 'delete']),
     ]),
 });
 
