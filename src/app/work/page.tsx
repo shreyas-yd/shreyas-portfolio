@@ -208,7 +208,9 @@ export default function WorkPage() {
                 <div className="role-block__dates">March 2026 – Present &nbsp;·&nbsp; Bengaluru, Karnataka, India</div>
                 <p className="role-block__summary">Independent consulting engagement for a multi-location healthcare brand — building their digital marketing presence, measurement infrastructure, and AI-assisted operational systems from the ground up. This engagement is not listed on public profiles by choice; the skills built here directly inform current positioning.</p>
               </div>
-              <div className="role-block__links"></div>
+              <div className="role-block__links">
+                <a className="role-link" href="https://www.manyadental.in" target="_blank" rel="noopener">Manya Dental</a>
+              </div>
             </div>
             <div className="role-accordions">
               <div className="accordion" data-accordion="">

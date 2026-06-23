@@ -32,7 +32,6 @@ export default function ResultsPage() {
             <a className="results-nav__item" href="#jel"><span className="results-nav__num">04</span> Jones Elite Logistics</a>
             <a className="results-nav__item" href="#karle"><span className="results-nav__num">05</span> Karle Infra</a>
             <a className="results-nav__item" href="#chaitanya"><span className="results-nav__num">06</span> Chaitanya India</a>
-            <a className="results-nav__item" href="#crunchbase"><span className="results-nav__num">07</span> Trupp / Crunchbase</a>
           </div>
         </nav>
 
@@ -86,11 +85,16 @@ export default function ResultsPage() {
                   </div>
                 </div>
 
-                <div className="outcome__links-label">See the full role</div>
+                <div className="outcome__links-label">See the full role &amp; verify the work</div>
                 <div className="outcome__links">
                   <a className="outcome-link outcome-link--story" href="/work#consulting-analytics">
                     <span className="outcome-link__label">View role detail on Work page</span>
                     <span className="outcome-link__url">work</span>
+                    <span className="outcome-link__arrow">→</span>
+                  </a>
+                  <a className="outcome-link" href="https://www.manyadental.in" target="_blank" rel="noopener">
+                    <span className="outcome-link__label">Manya Dental Website</span>
+                    <span className="outcome-link__url">manyadental.in</span>
                     <span className="outcome-link__arrow">→</span>
                   </a>
                 </div>
@@ -357,9 +361,9 @@ export default function ResultsPage() {
 
 
         {/* ── 05 KARLE INFRA ── */}
-        <section className="outcome outcome--dark" id="karle" aria-label="Karle Infra result">
+        <section className="outcome outcome--cream" id="karle" aria-label="Karle Infra result">
           <div className="outcome__inner">
-            <div className="outcome__label" data-num="05" style={{ color: 'rgba(255,255,255,0.3)' }}>Karle Infra · Social &amp; Brand Growth</div>
+            <div className="outcome__label" data-num="05">Karle Infra · Social &amp; Brand Growth</div>
             <div className="outcome__hero animate-fadeup">60%</div>
             <p className="outcome__hero-context animate-fadeup delay-1">LinkedIn follower growth — alongside 2× engagement, 21% Instagram growth, and 30–40% higher B2B event participation.</p>
 
@@ -379,36 +383,36 @@ export default function ResultsPage() {
                 <p>Karle Infra had the brand equity but not the digital presence to match it. As primary content strategist and creative lead, the work covered every channel and touchpoint — <strong>LinkedIn, Instagram, Google Ads, events, newsletters, quarterly reports, and corporate presentations</strong>.</p>
                 <p>The Tenant Activation campaigns were a particular differentiator: offline community engagement converted into measurable digital following by bringing the Karle Town Centre community into the digital space. <strong>Offline presence becoming online proof.</strong></p>
 
-                <div style={{ marginTop: '24px' }}>
-                  <div className="chart-title" style={{ color: 'rgba(255,255,255,0.3)' }}>Social &amp; Marketing Growth (Nov 2023 – Jul 2024)</div>
+                <div style={{ marginTop: '24px', background: 'var(--navy)', padding: '24px' }}>
+                  <div className="chart-title" style={{ color: 'rgba(255,255,255,0.8)' }}>Social &amp; Marketing Growth (Nov 2023 – Jul 2024)</div>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '2px', background: 'rgba(255,255,255,0.06)' }}>
                     <div style={{ background: 'rgba(255,255,255,0.04)', padding: '20px 12px', textAlign: 'center' }}>
                       <div style={{ width: '48px', height: '80px', background: 'rgba(255,255,255,0.06)', margin: '0 auto 12px', display: 'flex', alignItems: 'flex-end' }}>
-                        <div className="ai-bar-fill" data-width-h="48" style={{ width: '100%', height: '48px', background: 'var(--navy)' }}></div>
+                        <div className="ai-bar-fill" data-width-h="48" style={{ width: '100%', height: '48px', background: 'rgba(255,255,255,0.55)' }}></div>
                       </div>
                       <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 900, color: '#fff', marginBottom: '4px' }}>+60%</div>
-                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)' }}>LinkedIn Followers</div>
+                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>LinkedIn Followers</div>
                     </div>
                     <div style={{ background: 'rgba(255,255,255,0.04)', padding: '20px 12px', textAlign: 'center' }}>
                       <div style={{ width: '48px', height: '80px', background: 'rgba(255,255,255,0.06)', margin: '0 auto 12px', display: 'flex', alignItems: 'flex-end' }}>
                         <div style={{ width: '100%', height: '80px', background: 'var(--teal)' }}></div>
                       </div>
                       <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 900, color: '#fff', marginBottom: '4px' }}>2×</div>
-                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)' }}>LinkedIn Engagement</div>
+                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>LinkedIn Engagement</div>
                     </div>
                     <div style={{ background: 'rgba(255,255,255,0.04)', padding: '20px 12px', textAlign: 'center' }}>
                       <div style={{ width: '48px', height: '80px', background: 'rgba(255,255,255,0.06)', margin: '0 auto 12px', display: 'flex', alignItems: 'flex-end' }}>
                         <div style={{ width: '100%', height: '17px', background: 'var(--gold)' }}></div>
                       </div>
                       <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 900, color: '#fff', marginBottom: '4px' }}>+21%</div>
-                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)' }}>Instagram Followers</div>
+                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>Instagram Followers</div>
                     </div>
                     <div style={{ background: 'rgba(255,255,255,0.04)', padding: '20px 12px', textAlign: 'center' }}>
                       <div style={{ width: '48px', height: '80px', background: 'rgba(255,255,255,0.06)', margin: '0 auto 12px', display: 'flex', alignItems: 'flex-end' }}>
                         <div style={{ width: '100%', height: '28px', background: 'var(--accent)' }}></div>
                       </div>
                       <div style={{ fontFamily: 'var(--font-display)', fontSize: '22px', fontWeight: 900, color: '#fff', marginBottom: '4px' }}>+35%</div>
-                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '9px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.3)' }}>Event Participation</div>
+                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: 'rgba(255,255,255,0.8)' }}>Event Participation</div>
                     </div>
                   </div>
                 </div>
@@ -438,7 +442,7 @@ export default function ResultsPage() {
                   </div>
                 </div>
 
-                <div className="outcome__links-label" style={{ color: 'rgba(255,255,255,0.3)' }}>Verify the work</div>
+                <div className="outcome__links-label">Verify the work</div>
                 <div className="outcome__links">
                   <a className="outcome-link" href="https://in.linkedin.com/company/karle-infra-pvt-ltd" target="_blank" rel="noopener">
                     <span className="outcome-link__label">Karle Infra LinkedIn</span>
@@ -463,7 +467,7 @@ export default function ResultsPage() {
 
 
         {/* ── 06 CHAITANYA INDIA ── */}
-        <section className="outcome outcome--cream" id="chaitanya" aria-label="Chaitanya India result">
+        <section className="outcome outcome--light" id="chaitanya" aria-label="Chaitanya India result">
           <div className="outcome__inner">
             <div className="outcome__label" data-num="06">Chaitanya India Fin Credit · Brand Built from Zero</div>
             <div className="outcome__hero animate-fadeup" style={{ fontSize: 'clamp(52px,9vw,112px)', letterSpacing: '-2px' }}>Still Live</div>
@@ -526,60 +530,6 @@ export default function ResultsPage() {
                   <a className="outcome-link outcome-link--story" href="/about#chaitanya-story">
                     <span className="outcome-link__label">Read the full story →</span>
                     <span className="outcome-link__url">about</span>
-                    <span className="outcome-link__arrow">→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* ── 07 TRUPP / CRUNCHBASE ── */}
-        <section className="outcome outcome--light" id="crunchbase" aria-label="Trupp Global / Crunchbase result">
-          <div className="outcome__inner">
-            <div className="outcome__label" data-num="07">Trupp Global Technologies · For Crunchbase</div>
-            <div className="outcome__hero animate-fadeup" style={{ fontSize: 'clamp(64px,10vw,120px)' }}>At Scale</div>
-            <p className="outcome__hero-context animate-fadeup delay-1">SEO quality and content accuracy managed for Crunchbase — one of the world&apos;s leading startup and venture capital data platforms — delivering measurable ranking improvements across managed profiles.</p>
-
-            <div className="outcome__body">
-              <div className="outcome__story animate-fadeup delay-1">
-                <div className="outcome__story-label">Before &amp; After</div>
-                <div className="outcome__before-after">
-                  <div className="ba-cell ba-cell--before">
-                    <div className="ba-cell__label">Before</div>
-                    <p className="ba-cell__text">Crunchbase profiles across the global startup ecosystem with inconsistent SEO quality, metadata inaccuracies, and variable content standards reducing organic discoverability.</p>
-                  </div>
-                  <div className="ba-cell ba-cell--after">
-                    <div className="ba-cell__label">After</div>
-                    <p className="ba-cell__text">Improved organic visibility across managed profiles through metadata accuracy, keyword alignment, and structured content audit systems — delivering measurable ranking improvements at scale.</p>
-                  </div>
-                </div>
-                <p>Working on behalf of Trupp Global Technologies for Crunchbase — one of the world&apos;s most authoritative sources on startups and venture capital — required a systematic, data-driven approach to SEO quality at scale. <strong>Every managed profile needed to meet consistent standards</strong> for metadata accuracy, keyword alignment, and structured content before it could rank effectively.</p>
-                <p>The result was measurable ranking improvements across managed profiles — achieved through disciplined application of on-page SEO principles, content audit systems, and consistent compliance with brand guidelines across every managed listing and digital property.</p>
-              </div>
-
-              <div className="outcome__right animate-fadeup delay-2">
-                <div className="outcome__metrics">
-                  <div className="metric-row">
-                    <div className="metric-row__num" style={{ fontSize: 'clamp(16px,1.8vw,22px)', letterSpacing: 0 }}>Improved</div>
-                    <div className="metric-row__label">Organic Visibility Across Managed Profiles</div>
-                  </div>
-                  <div className="metric-row">
-                    <div className="metric-row__num" style={{ fontSize: 'clamp(16px,1.8vw,22px)', letterSpacing: 0 }}>Daily</div>
-                    <div className="metric-row__label">Keyword Research, Audits &amp; Reporting</div>
-                  </div>
-                  <div className="metric-row">
-                    <div className="metric-row__num" style={{ fontSize: 'clamp(16px,1.8vw,22px)', letterSpacing: 0 }}>Scale</div>
-                    <div className="metric-row__label">Global Startup Ecosystem Coverage</div>
-                  </div>
-                </div>
-
-                <div className="outcome__links-label">Verify the platform</div>
-                <div className="outcome__links">
-                  <a className="outcome-link" href="https://www.crunchbase.com" target="_blank" rel="noopener">
-                    <span className="outcome-link__label">Crunchbase Platform</span>
-                    <span className="outcome-link__url">crunchbase.com</span>
                     <span className="outcome-link__arrow">→</span>
                   </a>
                 </div>

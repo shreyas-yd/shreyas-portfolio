@@ -189,7 +189,7 @@ export default function AboutPage() {
                 <p>The instinct got the foot in the door. The discipline is what kept it there.</p>
                 <p>Over ten years, I moved through every layer of the digital marketing stack — content writing, SEO, social media management, performance campaigns, brand strategy, analytics, AI workflows. Not because I planned a career path, but because each role demanded the next skill, and I learned it.</p>
                 <p>The filmmaker in me asks the right questions. The marketer builds the system that answers them — <strong>content frameworks, performance dashboards, feedback loops, repurposing engines</strong>. Tools that carry the story forward without the story losing its shape.</p>
-                <p>My current work at Jones Group spans four business units simultaneously: 17,000+ organic followers built from zero, 300% organic lead growth, 187% visitor growth through AI-powered SEO pipelines. Not because I had a bigger budget. Because I had a clearer question, and I built the right system around the answer.</p>
+                <p>My current work at Jones Group spans four business units simultaneously: 17,000+ organic followers built from zero, 300% organic lead growth, 87% visitor growth through AI-powered SEO pipelines. Not because I had a bigger budget. Because I had a clearer question, and I built the right system around the answer.</p>
                 <p>That combination — creative instinct and measurement discipline — is what a decade of touching every leaf looks like.</p>
               </div>
             </div>
@@ -261,7 +261,7 @@ export default function AboutPage() {
               </div>
               <div className="qs-card">
                 <div className="qs-card__label">SEO visitor growth</div>
-                <div className="qs-card__num">187%</div>
+                <div className="qs-card__num">87%</div>
                 <p className="qs-card__text">Website visitor growth through AI-powered SEO content pipelines. 86% of traffic via organic SEO content.</p>
               </div>
               <div className="qs-card">

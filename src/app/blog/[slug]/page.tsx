@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import PageShell from '@/components/PageShell';
-import { getAllPosts, getPostBySlug, isContentfulConfigured } from '@/lib/contentful';
+import { getAllPosts, getPostBySlug, isContentfulConfigured, coverImage } from '@/lib/contentful';
 
 export const revalidate = 3600;
 
@@ -31,18 +31,30 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   if (!post) notFound();
 
   const f = post.fields;
+  const cover = coverImage(post);
 
   return (
     <PageShell active="blog" person={false}>
       <article className="container" style={{ maxWidth: 780, margin: '0 auto', padding: '140px 24px 80px' }}>
-        {f.publishedDate && (
-          <div className="font-mono text-accent" style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16 }}>
-            {new Date(f.publishedDate).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
-          </div>
-        )}
+        <div className="font-mono" style={{ fontSize: 10, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 16, display: 'flex', gap: 14, alignItems: 'center', flexWrap: 'wrap' }}>
+          {f.category && <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{f.category}</span>}
+          {f.publishedDate && (
+            <span className="text-mid">
+              {new Date(f.publishedDate).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </span>
+          )}
+        </div>
         <h1 className="font-display" style={{ fontSize: 'clamp(36px,5vw,56px)', fontWeight: 900, color: 'var(--ink)', lineHeight: 1.05, letterSpacing: '-1px', marginBottom: 32 }}>
           {f.title}
         </h1>
+        {cover && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={cover.url}
+            alt={cover.alt}
+            style={{ width: '100%', aspectRatio: '16 / 9', objectFit: 'cover', display: 'block', marginBottom: 40 }}
+          />
+        )}
         <div
           className="blog-body"
           style={{ fontSize: 17, fontWeight: 300, color: 'var(--mid)', lineHeight: 1.85 }}

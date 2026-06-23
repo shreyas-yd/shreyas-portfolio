@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageShell from '@/components/PageShell';
-import { getAllPosts, isContentfulConfigured } from '@/lib/contentful';
+import { getAllPosts, isContentfulConfigured, coverImage } from '@/lib/contentful';
 
 export const metadata: Metadata = {
   title: 'Blog — Shreyas Y D | Notes on Marketing, Content & Systems',
@@ -33,38 +33,44 @@ export default async function BlogIndex() {
       </header>
 
       <div className="container" style={{ padding: '72px 48px', maxWidth: 1120, margin: '0 auto' }}>
-        {!isContentfulConfigured ? (
-          <p style={{ color: 'var(--mid)', fontWeight: 300, fontSize: 16, lineHeight: 1.8 }}>
-            The blog is ready and waiting. Add your Contentful credentials to{' '}
-            <code>.env</code> (a <code>blogPost</code> content type with{' '}
-            <code>title</code>, <code>slug</code>, <code>excerpt</code>,{' '}
-            <code>body</code>, <code>publishedDate</code>, <code>coverImage</code>) and posts
-            will appear here automatically.
-          </p>
-        ) : posts.length === 0 ? (
+        {(!isContentfulConfigured || posts.length === 0) ? (
           <p style={{ color: 'var(--mid)', fontWeight: 300 }}>No posts published yet — check back soon.</p>
         ) : (
           <div className="grid gap-5 md:grid-cols-2">
             {posts.map((post) => {
               const f = post.fields;
+              const cover = coverImage(post);
               return (
                 <Link
                   key={post.sys.id}
                   href={`/blog/${f.slug}`}
-                  className="block border border-rule bg-white p-8 no-underline transition hover:-translate-y-1 hover:shadow-soft"
+                  className="block overflow-hidden border border-rule bg-white no-underline transition hover:-translate-y-1 hover:shadow-soft"
                   style={{ color: 'inherit' }}
                 >
-                  {f.publishedDate && (
-                    <div className="font-mono text-faint" style={{ fontSize: 10, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 12 }}>
-                      {new Date(f.publishedDate).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  {cover && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={cover.url}
+                      alt={cover.alt}
+                      style={{ width: '100%', aspectRatio: '16 / 9', objectFit: 'cover', display: 'block' }}
+                    />
+                  )}
+                  <div style={{ padding: 32 }}>
+                    <div className="font-mono" style={{ fontSize: 10, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 12, display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+                      {f.category && <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{f.category}</span>}
+                      {f.publishedDate && (
+                        <span className="text-faint">
+                          {new Date(f.publishedDate).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        </span>
+                      )}
                     </div>
-                  )}
-                  <h2 className="font-display" style={{ fontSize: 24, fontWeight: 700, color: 'var(--ink)', lineHeight: 1.2, marginBottom: 10 }}>
-                    {f.title}
-                  </h2>
-                  {f.excerpt && (
-                    <p style={{ color: 'var(--mid)', fontWeight: 300, fontSize: 14, lineHeight: 1.6 }}>{f.excerpt}</p>
-                  )}
+                    <h2 className="font-display" style={{ fontSize: 24, fontWeight: 700, color: 'var(--ink)', lineHeight: 1.2, marginBottom: 10 }}>
+                      {f.title}
+                    </h2>
+                    {f.excerpt && (
+                      <p style={{ color: 'var(--mid)', fontWeight: 300, fontSize: 14, lineHeight: 1.6 }}>{f.excerpt}</p>
+                    )}
+                  </div>
                 </Link>
               );
             })}

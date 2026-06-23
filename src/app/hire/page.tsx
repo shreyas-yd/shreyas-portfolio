@@ -5,11 +5,11 @@ import PageHeader from '@/components/PageHeader';
 import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'Work With Me — Shreyas Y D | Marketing Analytics & Content Growth',
+  title: 'Hire Me — Shreyas Y D | Marketing Operations & Campaign Management',
   description:
-    'Shreyas YD builds marketing analytics systems and content growth engines for B2B and SaaS companies — remotely from Bengaluru. Three productised service packages. Book a discovery call.',
+    'Shreyas YD runs marketing operations for B2B and SaaS teams — campaign setup and trafficking, tracking QA, reporting, optimisation, and platform management. A seamless extension of your team, remote from Bengaluru.',
   keywords:
-    'Shreyas YD, marketing analytics consultant, GA4 audit, GTM setup, Looker Studio dashboard, SEO retainer, AI content system, Bengaluru, digital marketing consultant',
+    'Shreyas YD, marketing operations, campaign management, campaign trafficking, marketing QA, GA4, GTM, Looker Studio dashboard, Google Ads, Meta Ads, platform management, marketing ops consultant, Bengaluru',
   alternates: { canonical: '/hire' },
 };
 
@@ -19,9 +19,9 @@ export default function HirePage() {
 
         {/* ── SECTION 1: HERO ── */}
         <PageHeader
-          eyebrow="Work With Me"
-          title={<>I build marketing analytics systems<br /><em>and content growth engines.</em></>}
-          sub="If your marketing data lives in four separate tabs, your conversion tracking is a guess, and your content isn't compounding — those are solvable problems. Here's how I solve them."
+          eyebrow="Hire Me"
+          title={<>Scale your marketing operations<br /><em>with speed and accuracy.</em></>}
+          sub="From campaign setup and trafficking to QA, reporting, and optimisation — I run the day-to-day marketing operations so your team can focus on strategy. Fewer errors, faster launches, cleaner data, as a seamless extension of your team."
         >
           <div className="page-header__actions">
             <a className="btn btn--primary" href={`mailto:${site.email}`}>Book a Discovery Call →</a>
@@ -29,83 +29,113 @@ export default function HirePage() {
           </div>
         </PageHeader>
 
-        {/* ── SECTION 2: SERVICE PACKAGES ── */}
+        {/* ── SECTION 2: WHAT I HANDLE ── */}
         <div className="services-section">
           <div className="container">
-            <div className="t-eyebrow animate-fadeup">How I Work With You</div>
-            <h2 className="h2 animate-fadeup delay-1" style={{ marginTop: '16px' }}>Four ways to engage.</h2>
-            <p className="body-lg animate-fadeup delay-2" style={{ maxWidth: '580px', marginTop: '12px' }}>Pick the scope that matches your situation — or book a discovery call and we&apos;ll work it out together.</p>
+            <div className="t-eyebrow animate-fadeup">What I Handle</div>
+            <h2 className="h2 animate-fadeup delay-1" style={{ marginTop: '16px' }}>End-to-end marketing operations.</h2>
+            <p className="body-lg animate-fadeup delay-2" style={{ maxWidth: '580px', marginTop: '12px' }}>Five connected areas that keep campaigns launching on time, tracking clean, and reporting trustworthy. Take one, or hand me the whole operation.</p>
 
             <div className="services-grid">
 
-              {/* Package 01 */}
+              {/* Service 01 */}
               <div className="service-card animate-fadeup delay-1">
-                <div className="service-card__tag">Package 01</div>
-                <div className="service-card__title">Marketing Analytics Audit &amp; Dashboard</div>
+                <div className="service-card__tag">01 · Setup &amp; Trafficking</div>
+                <div className="service-card__title">Campaign Setup &amp; Trafficking</div>
                 <ul className="service-card__features">
-                  <li>GA4 audit — configuration, data quality, attribution gaps</li>
-                  <li>GTM review — conversion tracking, call tracking, form tracking</li>
-                  <li>Unified Looker Studio dashboard — all channels, one view</li>
-                  <li>30-minute strategy walkthrough of findings and recommendations</li>
+                  <li>Campaign configuration across Google, Meta, and LinkedIn</li>
+                  <li>Conversion pixel and tag implementation</li>
+                  <li>Audience and segment setup</li>
+                  <li>Creative upload and ad trafficking</li>
+                  <li>Standardised workflows for high-volume launches</li>
                 </ul>
                 <div className="service-card__footer">
-                  <div className="service-card__timeline">Timeline · 2 weeks</div>
-                  <div className="service-card__price">Starting at $1,000</div>
+                  <div className="service-card__timeline">High-volume launches, precision and speed</div>
                 </div>
               </div>
 
-              {/* Package 02 */}
+              {/* Service 02 */}
               <div className="service-card service-card--teal animate-fadeup delay-2">
-                <div className="service-card__tag">Package 02</div>
-                <div className="service-card__title">AI Content System Setup</div>
+                <div className="service-card__tag">02 · QA &amp; Compliance</div>
+                <div className="service-card__title">Quality Assurance &amp; Compliance</div>
                 <ul className="service-card__features">
-                  <li>Content strategy framework tailored to your brand and audience</li>
-                  <li>Prompt library for your core content formats</li>
-                  <li>Workflow SOP your team can run independently</li>
-                  <li>2-week pilot — real content produced using the system</li>
+                  <li>Pre-launch QA on every campaign</li>
+                  <li>Tracking and conversion validation</li>
+                  <li>Targeting and audience verification</li>
+                  <li>UTM governance and naming consistency</li>
+                  <li>Brand-safety and creative compliance checks</li>
                 </ul>
                 <div className="service-card__footer">
-                  <div className="service-card__timeline">Timeline · 4 weeks</div>
-                  <div className="service-card__price">Starting at $2,000</div>
+                  <div className="service-card__timeline">Catch errors before they cost you</div>
                 </div>
               </div>
 
-              {/* Package 03 */}
+              {/* Service 03 */}
               <div className="service-card service-card--navy animate-fadeup delay-3">
-                <div className="service-card__tag">Package 03</div>
-                <div className="service-card__title">Organic Growth Retainer</div>
+                <div className="service-card__tag">03 · Reporting &amp; Analytics</div>
+                <div className="service-card__title">Reporting &amp; Analytics Support</div>
                 <ul className="service-card__features">
-                  <li>Monthly content calendar aligned to SEO and audience strategy</li>
-                  <li>Weekly SEO recommendations based on live data</li>
-                  <li>Monthly Social Media Content Calendar tailored for audience</li>
-                  <li>Monthly analytics report — what&apos;s working, what to fix, what to do next</li>
-                  <li>One strategy call per month</li>
+                  <li>Performance dashboards in Looker Studio</li>
+                  <li>Data consolidation across every channel</li>
+                  <li>Custom report building for each stakeholder</li>
+                  <li>Insight generation, not just numbers</li>
+                  <li>Clear, on-time client and leadership reporting</li>
                 </ul>
                 <div className="service-card__footer">
-                  <div className="service-card__timeline">Timeline · Ongoing monthly</div>
-                  <div className="service-card__price">Starting at $1,500/month</div>
+                  <div className="service-card__timeline">Accurate, timely, actionable</div>
                 </div>
               </div>
 
-              {/* Package 04 — full-width featured */}
+              {/* Service 04 */}
+              <div className="service-card animate-fadeup delay-1">
+                <div className="service-card__tag">04 · Optimisation</div>
+                <div className="service-card__title">Campaign Optimisation Support</div>
+                <ul className="service-card__features">
+                  <li>Bid and budget pacing management</li>
+                  <li>Audience refinement based on live data</li>
+                  <li>A/B test design and execution</li>
+                  <li>Ongoing performance analysis</li>
+                  <li>Data-driven recommendations you can act on</li>
+                </ul>
+                <div className="service-card__footer">
+                  <div className="service-card__timeline">Continuous, data-driven improvement</div>
+                </div>
+              </div>
+
+              {/* Service 05 */}
+              <div className="service-card service-card--teal animate-fadeup delay-2">
+                <div className="service-card__tag">05 · Platforms &amp; Integrations</div>
+                <div className="service-card__title">Platform Management &amp; Integrations</div>
+                <ul className="service-card__features">
+                  <li>Google Ads, Meta, and LinkedIn campaign platforms</li>
+                  <li>GA4 and Google Tag Manager configuration</li>
+                  <li>Search Console and Google Business Profile</li>
+                  <li>Tag management and conversion API integrations</li>
+                  <li>Clean data flowing between every tool</li>
+                </ul>
+                <div className="service-card__footer">
+                  <div className="service-card__timeline">One connected stack, one source of truth</div>
+                </div>
+              </div>
+
+              {/* Featured — full-width */}
               <div className="service-card service-card--featured animate-fadeup">
                 <div>
-                  <div className="service-card__tag">Package 04</div>
-                  <div className="service-card__title">Full Digital Marketing Management</div>
-                  <p className="service-card__intro">For brands that want the entire marketing operation run end-to-end — not just advice, but execution. You brief me on the business; I manage the marketing.</p>
+                  <div className="service-card__tag">Full Operations Management</div>
+                  <div className="service-card__title">Run the entire operation, end-to-end.</div>
+                  <p className="service-card__intro">For teams that want marketing operations handled completely — not advice, but execution. You brief me on the business; I run setup, trafficking, QA, reporting, and optimisation as a dedicated extension of your team.</p>
                 </div>
                 <div>
                   <ul className="service-card__features">
-                    <li>Paid Ads management — Google Ads and Meta/Social Media Ads: strategy, setup, ongoing optimisation, and reporting</li>
-                    <li>SEO — keyword strategy, content planning, on-page optimisation, and monthly performance review</li>
-                    <li>Organic Social Media — content calendar, copy, scheduling, and community management across relevant platforms</li>
-                    <li>Monthly performance report across all channels — plain-English summary of what&apos;s working, what&apos;s not, and what&apos;s next</li>
-                    <li>One strategy call per month</li>
+                    <li>Embedded ownership of day-to-day campaign operations across all channels</li>
+                    <li>Standardised QA and trafficking workflows applied to every launch</li>
+                    <li>Always-on reporting and a single dashboard across paid, organic, and analytics</li>
+                    <li>Continuous optimisation and process improvement, month over month</li>
+                    <li>One strategy call per month — plain-English on what&apos;s working and what&apos;s next</li>
                   </ul>
                   <div className="service-card__footer">
-                    <div className="service-card__timeline">Timeline · Ongoing monthly</div>
-                    <div className="service-card__price">Custom — based on scope and channels</div>
-                    <p className="service-card__note">Book a discovery call to discuss what this looks like for your business.</p>
+                    <div className="service-card__timeline">Ongoing · dedicated, as an extension of your team</div>
+                    <p className="service-card__note">Book a discovery call to map what this looks like for your business.</p>
                   </div>
                 </div>
               </div>
@@ -114,13 +144,45 @@ export default function HirePage() {
           </div>
         </div>
 
-        {/* ── SECTION 3: CASE STUDY SNAPSHOTS ── */}
+        {/* ── SECTION 3: HOW WE WORK TOGETHER ── */}
+        <div className="services-section" style={{ paddingTop: 0 }}>
+          <div className="container">
+            <div className="t-eyebrow animate-fadeup">How We Work Together</div>
+            <h2 className="h2 animate-fadeup delay-1" style={{ marginTop: '16px' }}>Four steps to seamless operations.</h2>
+            <p className="body-lg animate-fadeup delay-2" style={{ maxWidth: '580px', marginTop: '12px' }}>A simple, repeatable engagement that gets me operating as part of your team — usually within two to three weeks.</p>
+
+            <div className="work-preview-grid">
+              <div className="work-card animate-fadeup delay-1">
+                <div className="work-card__num">01</div>
+                <div className="work-card__label">Discover</div>
+                <p className="work-card__desc">I learn your setup, channels, and tools, and pinpoint exactly where operations are slowing you down or leaking data.</p>
+              </div>
+              <div className="work-card work-card--teal animate-fadeup delay-2">
+                <div className="work-card__num" style={{ color: 'var(--teal)' }}>02</div>
+                <div className="work-card__label">Develop</div>
+                <p className="work-card__desc">I build a tailored plan and the workflows — setup, QA, reporting, optimisation — to hit your operational goals.</p>
+              </div>
+              <div className="work-card work-card--gold animate-fadeup delay-3">
+                <div className="work-card__num" style={{ color: 'var(--gold)' }}>03</div>
+                <div className="work-card__label">Deliver</div>
+                <p className="work-card__desc">I execute as an extension of your team — campaigns launched accurately, on time, with reporting you can trust.</p>
+              </div>
+              <div className="work-card work-card--navy animate-fadeup delay-1">
+                <div className="work-card__num" style={{ color: 'var(--navy)' }}>04</div>
+                <div className="work-card__label">Optimise</div>
+                <p className="work-card__desc">I keep refining the process and the performance — better efficiency, cleaner data, stronger results every month.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ── SECTION 4: CASE STUDY SNAPSHOTS ── */}
         <div className="proof-section">
           <div className="container">
             <section className="section" aria-label="Case study snapshots">
               <div className="t-eyebrow animate-fadeup">The Work, Verified</div>
               <h2 className="h2 animate-fadeup delay-1" style={{ marginTop: '16px' }}>These aren&apos;t hypotheticals.</h2>
-              <p className="body-lg animate-fadeup delay-2" style={{ maxWidth: '580px', marginTop: '12px' }}>Every package above maps to work already built and delivered. The results are real. The links are live.</p>
+              <p className="body-lg animate-fadeup delay-2" style={{ maxWidth: '580px', marginTop: '12px' }}>The operations above map to work already built and delivered. The results are real. The links are live.</p>
 
               <div className="work-preview-grid">
                 <Link className="work-card animate-fadeup delay-1" href="/results#consulting-analytics" aria-label="Healthcare Analytics System case study">
@@ -148,10 +210,10 @@ export default function HirePage() {
           </div>
         </div>
 
-        {/* ── SECTION 4: CTA ── */}
+        {/* ── SECTION 5: CTA ── */}
         <div className="hire-cta" role="complementary" aria-label="Get in touch">
           <h2>Ready to start?</h2>
-          <p className="hire-cta__sub">Book a 30-minute discovery call — no pitch, no pressure. We talk about your setup, your gaps, and whether I&apos;m the right person to help.</p>
+          <p className="hire-cta__sub">Book a 30-minute discovery call — no pitch, no pressure. We talk about your setup, where operations are slowing you down, and whether I&apos;m the right person to help.</p>
           <div className="hire-cta__actions">
             <a className="btn btn--primary" href={`mailto:${site.email}`}>Send me an email →</a>
             <a className="btn btn--ghost-white" href={site.linkedin} target="_blank" rel="noopener">Connect on LinkedIn →</a>
