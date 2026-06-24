@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
 
   revalidatePath('/blog', 'page');
   revalidatePath('/blog/[slug]', 'page');
+  revalidatePath('/feed.xml');
 
   return NextResponse.json({ revalidated: true, timestamp: new Date().toISOString() });
 }

@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     description:
       'Filmmaker-turned-marketer. 10+ years building brands, organic communities, and growth engines. 300% organic lead growth. 17K+ community built from zero.',
   },
+  alternates: {
+    types: {
+      'application/rss+xml': 'https://ydshreyas.com/feed.xml',
+    },
+  },
   twitter: {
     card: 'summary_large_image',
     title: 'Shreyas Y D — Digital Marketing & Content Leader',
